@@ -1,0 +1,785 @@
+activity_id,customer_id,activity_date,activity_type,outcome
+ACT-00001,CUST-0001,2026-03-08,CSM Follow-up,Positive engagement
+ACT-00002,CUST-0001,2026-04-28,Renewal Review,Follow-up required
+ACT-00003,CUST-0001,2026-07-22,Executive Meeting,Positive engagement
+ACT-00004,CUST-0001,2026-07-12,Executive Meeting,Positive engagement
+ACT-00005,CUST-0001,2026-07-01,CSM Follow-up,Follow-up required
+ACT-00006,CUST-0001,2026-04-23,Renewal Review,Follow-up required
+ACT-00007,CUST-0002,2026-06-09,Call,No response
+ACT-00008,CUST-0002,2026-07-08,Email,Positive engagement
+ACT-00009,CUST-0002,2026-05-21,Executive Meeting,No response
+ACT-00010,CUST-0002,2026-02-02,Email,No response
+ACT-00011,CUST-0002,2026-04-20,Executive Meeting,Positive engagement
+ACT-00012,CUST-0002,2026-07-16,Call,No response
+ACT-00013,CUST-0003,2026-03-06,Email,Follow-up required
+ACT-00014,CUST-0003,2026-04-23,Email,Completed
+ACT-00015,CUST-0003,2026-02-02,Executive Meeting,Follow-up required
+ACT-00016,CUST-0003,2026-06-04,Email,Positive engagement
+ACT-00017,CUST-0003,2026-03-25,CSM Follow-up,Positive engagement
+ACT-00018,CUST-0003,2026-03-19,Email,Follow-up required
+ACT-00019,CUST-0003,2026-04-19,Executive Meeting,Positive engagement
+ACT-00020,CUST-0004,2026-07-08,CSM Follow-up,Follow-up required
+ACT-00021,CUST-0004,2026-07-01,Renewal Review,Positive engagement
+ACT-00022,CUST-0004,2026-06-06,Call,Follow-up required
+ACT-00023,CUST-0004,2026-07-27,Call,Follow-up required
+ACT-00024,CUST-0004,2026-05-26,CSM Follow-up,Positive engagement
+ACT-00025,CUST-0004,2026-04-16,CSM Follow-up,Completed
+ACT-00026,CUST-0004,2026-02-02,Call,Follow-up required
+ACT-00027,CUST-0004,2026-06-12,Call,Follow-up required
+ACT-00028,CUST-0004,2026-04-15,Call,Completed
+ACT-00029,CUST-0004,2026-06-15,Call,Completed
+ACT-00030,CUST-0004,2026-06-20,Email,Positive engagement
+ACT-00031,CUST-0004,2026-03-07,Call,Completed
+ACT-00032,CUST-0005,2026-03-24,Renewal Review,Completed
+ACT-00033,CUST-0005,2026-07-16,Email,Positive engagement
+ACT-00034,CUST-0005,2026-04-20,Renewal Review,Completed
+ACT-00035,CUST-0005,2026-02-16,CSM Follow-up,Positive engagement
+ACT-00036,CUST-0005,2026-02-03,Email,Positive engagement
+ACT-00037,CUST-0005,2026-04-04,CSM Follow-up,Follow-up required
+ACT-00038,CUST-0006,2026-03-13,Call,Positive engagement
+ACT-00039,CUST-0006,2026-06-22,CSM Follow-up,Follow-up required
+ACT-00040,CUST-0006,2026-02-07,Renewal Review,Completed
+ACT-00041,CUST-0006,2026-06-01,CSM Follow-up,Positive engagement
+ACT-00042,CUST-0006,2026-07-31,Email,Positive engagement
+ACT-00043,CUST-0006,2026-05-28,Call,Completed
+ACT-00044,CUST-0006,2026-05-01,CSM Follow-up,Follow-up required
+ACT-00045,CUST-0006,2026-04-24,Executive Meeting,Positive engagement
+ACT-00046,CUST-0006,2026-05-04,Renewal Review,Positive engagement
+ACT-00047,CUST-0006,2026-04-10,CSM Follow-up,Completed
+ACT-00048,CUST-0006,2026-05-09,Call,Positive engagement
+ACT-00049,CUST-0007,2026-04-25,Call,Positive engagement
+ACT-00050,CUST-0007,2026-02-24,Renewal Review,Positive engagement
+ACT-00051,CUST-0007,2026-05-28,CSM Follow-up,Positive engagement
+ACT-00052,CUST-0007,2026-06-22,Call,Positive engagement
+ACT-00053,CUST-0008,2026-05-12,Email,Positive engagement
+ACT-00054,CUST-0008,2026-03-19,CSM Follow-up,Completed
+ACT-00055,CUST-0008,2026-07-16,CSM Follow-up,Completed
+ACT-00056,CUST-0008,2026-02-17,CSM Follow-up,Positive engagement
+ACT-00057,CUST-0008,2026-03-28,Call,Follow-up required
+ACT-00058,CUST-0009,2026-06-25,Renewal Review,Completed
+ACT-00059,CUST-0009,2026-02-08,Executive Meeting,Completed
+ACT-00060,CUST-0009,2026-03-17,Call,Positive engagement
+ACT-00061,CUST-0009,2026-06-26,Renewal Review,Completed
+ACT-00062,CUST-0009,2026-05-17,Call,Completed
+ACT-00063,CUST-0009,2026-05-21,Executive Meeting,Positive engagement
+ACT-00064,CUST-0009,2026-06-30,Email,Positive engagement
+ACT-00065,CUST-0010,2026-04-02,Renewal Review,Completed
+ACT-00066,CUST-0010,2026-03-15,Executive Meeting,Positive engagement
+ACT-00067,CUST-0010,2026-04-04,Renewal Review,Positive engagement
+ACT-00068,CUST-0010,2026-03-25,Executive Meeting,Follow-up required
+ACT-00069,CUST-0010,2026-04-10,CSM Follow-up,No response
+ACT-00070,CUST-0010,2026-07-16,CSM Follow-up,Follow-up required
+ACT-00071,CUST-0010,2026-03-29,Call,Follow-up required
+ACT-00072,CUST-0010,2026-04-05,Email,Follow-up required
+ACT-00073,CUST-0011,2026-06-28,CSM Follow-up,Positive engagement
+ACT-00074,CUST-0011,2026-03-02,Call,Follow-up required
+ACT-00075,CUST-0011,2026-07-05,Renewal Review,Follow-up required
+ACT-00076,CUST-0011,2026-02-01,Call,Positive engagement
+ACT-00077,CUST-0011,2026-03-17,CSM Follow-up,Completed
+ACT-00078,CUST-0011,2026-03-14,Email,Follow-up required
+ACT-00079,CUST-0011,2026-04-05,Renewal Review,Follow-up required
+ACT-00080,CUST-0011,2026-06-15,CSM Follow-up,Positive engagement
+ACT-00081,CUST-0012,2026-03-27,CSM Follow-up,Positive engagement
+ACT-00082,CUST-0012,2026-04-25,Call,Positive engagement
+ACT-00083,CUST-0012,2026-06-23,Renewal Review,Completed
+ACT-00084,CUST-0012,2026-03-06,Call,Completed
+ACT-00085,CUST-0012,2026-07-23,Email,Completed
+ACT-00086,CUST-0013,2026-05-13,Email,Positive engagement
+ACT-00087,CUST-0013,2026-03-21,Call,Completed
+ACT-00088,CUST-0013,2026-02-12,Executive Meeting,Positive engagement
+ACT-00089,CUST-0013,2026-06-06,Renewal Review,Positive engagement
+ACT-00090,CUST-0013,2026-05-31,Renewal Review,Positive engagement
+ACT-00091,CUST-0013,2026-06-10,Renewal Review,Follow-up required
+ACT-00092,CUST-0013,2026-05-01,Call,Positive engagement
+ACT-00093,CUST-0013,2026-07-31,Executive Meeting,Positive engagement
+ACT-00094,CUST-0013,2026-06-12,Executive Meeting,Completed
+ACT-00095,CUST-0014,2026-07-14,Renewal Review,Follow-up required
+ACT-00096,CUST-0014,2026-02-16,Email,Completed
+ACT-00097,CUST-0014,2026-02-05,Executive Meeting,Follow-up required
+ACT-00098,CUST-0014,2026-04-02,CSM Follow-up,Positive engagement
+ACT-00099,CUST-0014,2026-02-21,Renewal Review,Positive engagement
+ACT-00100,CUST-0014,2026-04-24,Email,Follow-up required
+ACT-00101,CUST-0014,2026-02-18,Executive Meeting,Completed
+ACT-00102,CUST-0015,2026-06-27,Email,Completed
+ACT-00103,CUST-0015,2026-03-11,Renewal Review,Completed
+ACT-00104,CUST-0015,2026-07-01,Executive Meeting,Positive engagement
+ACT-00105,CUST-0015,2026-02-07,Email,Follow-up required
+ACT-00106,CUST-0015,2026-03-23,CSM Follow-up,Follow-up required
+ACT-00107,CUST-0015,2026-07-18,Renewal Review,Completed
+ACT-00108,CUST-0015,2026-02-15,Renewal Review,Completed
+ACT-00109,CUST-0016,2026-06-28,CSM Follow-up,Follow-up required
+ACT-00110,CUST-0016,2026-02-22,Call,Positive engagement
+ACT-00111,CUST-0016,2026-07-02,CSM Follow-up,Completed
+ACT-00112,CUST-0016,2026-07-06,Email,Completed
+ACT-00113,CUST-0017,2026-02-13,Call,Positive engagement
+ACT-00114,CUST-0017,2026-03-11,Email,Completed
+ACT-00115,CUST-0017,2026-03-13,Email,Positive engagement
+ACT-00116,CUST-0017,2026-07-30,CSM Follow-up,Follow-up required
+ACT-00117,CUST-0017,2026-05-31,Call,Completed
+ACT-00118,CUST-0017,2026-03-02,Renewal Review,Positive engagement
+ACT-00119,CUST-0017,2026-07-23,Email,Completed
+ACT-00120,CUST-0017,2026-03-01,CSM Follow-up,Follow-up required
+ACT-00121,CUST-0017,2026-02-27,Call,Completed
+ACT-00122,CUST-0017,2026-02-11,Email,Positive engagement
+ACT-00123,CUST-0018,2026-05-26,Call,Positive engagement
+ACT-00124,CUST-0018,2026-04-29,Renewal Review,Follow-up required
+ACT-00125,CUST-0018,2026-04-05,Call,Positive engagement
+ACT-00126,CUST-0018,2026-03-27,Email,Follow-up required
+ACT-00127,CUST-0019,2026-05-22,CSM Follow-up,Follow-up required
+ACT-00128,CUST-0019,2026-03-26,Renewal Review,Completed
+ACT-00129,CUST-0019,2026-07-20,Call,Follow-up required
+ACT-00130,CUST-0019,2026-07-17,Executive Meeting,Positive engagement
+ACT-00131,CUST-0019,2026-02-27,Call,Follow-up required
+ACT-00132,CUST-0019,2026-03-18,Email,Completed
+ACT-00133,CUST-0019,2026-04-14,Email,Positive engagement
+ACT-00134,CUST-0020,2026-07-11,Renewal Review,Completed
+ACT-00135,CUST-0020,2026-04-28,Email,Positive engagement
+ACT-00136,CUST-0020,2026-07-21,Executive Meeting,Completed
+ACT-00137,CUST-0020,2026-03-11,Renewal Review,Follow-up required
+ACT-00138,CUST-0020,2026-05-08,Call,Completed
+ACT-00139,CUST-0020,2026-07-02,Call,Positive engagement
+ACT-00140,CUST-0020,2026-05-05,Executive Meeting,Positive engagement
+ACT-00141,CUST-0020,2026-05-09,Email,Positive engagement
+ACT-00142,CUST-0020,2026-07-18,Email,Completed
+ACT-00143,CUST-0020,2026-07-21,Renewal Review,Positive engagement
+ACT-00144,CUST-0021,2026-03-05,Renewal Review,Follow-up required
+ACT-00145,CUST-0021,2026-02-05,Email,Completed
+ACT-00146,CUST-0021,2026-05-28,Email,Completed
+ACT-00147,CUST-0021,2026-04-12,Call,Follow-up required
+ACT-00148,CUST-0021,2026-05-03,Renewal Review,Follow-up required
+ACT-00149,CUST-0021,2026-06-19,Executive Meeting,Follow-up required
+ACT-00150,CUST-0021,2026-04-20,Call,Completed
+ACT-00151,CUST-0021,2026-02-07,Executive Meeting,Completed
+ACT-00152,CUST-0021,2026-03-12,Email,Completed
+ACT-00153,CUST-0022,2026-02-14,CSM Follow-up,Completed
+ACT-00154,CUST-0022,2026-05-04,Renewal Review,Completed
+ACT-00155,CUST-0022,2026-06-03,Call,Positive engagement
+ACT-00156,CUST-0022,2026-06-07,Executive Meeting,Completed
+ACT-00157,CUST-0022,2026-03-15,Renewal Review,Positive engagement
+ACT-00158,CUST-0022,2026-02-16,CSM Follow-up,Positive engagement
+ACT-00159,CUST-0022,2026-02-22,CSM Follow-up,Follow-up required
+ACT-00160,CUST-0022,2026-07-02,Email,Follow-up required
+ACT-00161,CUST-0022,2026-03-31,Call,Completed
+ACT-00162,CUST-0022,2026-04-14,Renewal Review,Positive engagement
+ACT-00163,CUST-0022,2026-02-28,Executive Meeting,Follow-up required
+ACT-00164,CUST-0023,2026-03-13,Email,No response
+ACT-00165,CUST-0023,2026-04-15,Email,No response
+ACT-00166,CUST-0023,2026-03-04,Email,Follow-up required
+ACT-00167,CUST-0023,2026-06-08,Renewal Review,Positive engagement
+ACT-00168,CUST-0023,2026-05-27,Executive Meeting,No response
+ACT-00169,CUST-0023,2026-04-20,Renewal Review,No response
+ACT-00170,CUST-0023,2026-05-25,Renewal Review,Follow-up required
+ACT-00171,CUST-0023,2026-05-07,Executive Meeting,No response
+ACT-00172,CUST-0024,2026-04-05,Executive Meeting,Follow-up required
+ACT-00173,CUST-0024,2026-02-28,Call,Follow-up required
+ACT-00174,CUST-0024,2026-05-30,CSM Follow-up,Completed
+ACT-00175,CUST-0024,2026-03-01,Email,Positive engagement
+ACT-00176,CUST-0024,2026-02-16,Email,Positive engagement
+ACT-00177,CUST-0024,2026-03-04,Email,Completed
+ACT-00178,CUST-0025,2026-05-17,Renewal Review,Completed
+ACT-00179,CUST-0025,2026-02-26,CSM Follow-up,Follow-up required
+ACT-00180,CUST-0025,2026-04-12,Email,Follow-up required
+ACT-00181,CUST-0025,2026-03-14,CSM Follow-up,Positive engagement
+ACT-00182,CUST-0026,2026-06-20,Email,Positive engagement
+ACT-00183,CUST-0026,2026-07-22,Executive Meeting,No response
+ACT-00184,CUST-0026,2026-03-10,Renewal Review,No response
+ACT-00185,CUST-0026,2026-02-28,Executive Meeting,Follow-up required
+ACT-00186,CUST-0027,2026-03-23,Renewal Review,Completed
+ACT-00187,CUST-0027,2026-05-16,CSM Follow-up,Completed
+ACT-00188,CUST-0027,2026-04-05,Email,Follow-up required
+ACT-00189,CUST-0027,2026-03-31,Executive Meeting,Completed
+ACT-00190,CUST-0027,2026-02-13,Executive Meeting,Follow-up required
+ACT-00191,CUST-0028,2026-04-12,CSM Follow-up,Follow-up required
+ACT-00192,CUST-0028,2026-03-24,CSM Follow-up,Completed
+ACT-00193,CUST-0028,2026-03-02,Call,Completed
+ACT-00194,CUST-0028,2026-02-05,Renewal Review,Follow-up required
+ACT-00195,CUST-0028,2026-03-19,Executive Meeting,Positive engagement
+ACT-00196,CUST-0028,2026-06-16,Executive Meeting,Follow-up required
+ACT-00197,CUST-0028,2026-05-21,CSM Follow-up,Positive engagement
+ACT-00198,CUST-0028,2026-04-06,CSM Follow-up,Completed
+ACT-00199,CUST-0028,2026-03-25,Email,Positive engagement
+ACT-00200,CUST-0028,2026-02-02,Executive Meeting,Completed
+ACT-00201,CUST-0028,2026-07-22,Call,Positive engagement
+ACT-00202,CUST-0028,2026-05-15,Call,Follow-up required
+ACT-00203,CUST-0029,2026-05-23,CSM Follow-up,Follow-up required
+ACT-00204,CUST-0029,2026-03-11,Email,Follow-up required
+ACT-00205,CUST-0029,2026-06-30,Email,Positive engagement
+ACT-00206,CUST-0029,2026-04-03,Call,Positive engagement
+ACT-00207,CUST-0029,2026-06-02,Email,Completed
+ACT-00208,CUST-0029,2026-02-15,Executive Meeting,Follow-up required
+ACT-00209,CUST-0029,2026-05-18,CSM Follow-up,Completed
+ACT-00210,CUST-0029,2026-04-21,Executive Meeting,Positive engagement
+ACT-00211,CUST-0030,2026-02-18,Email,Completed
+ACT-00212,CUST-0030,2026-05-26,Renewal Review,Follow-up required
+ACT-00213,CUST-0030,2026-07-21,CSM Follow-up,Completed
+ACT-00214,CUST-0030,2026-04-06,Email,Completed
+ACT-00215,CUST-0031,2026-06-30,Call,Positive engagement
+ACT-00216,CUST-0031,2026-06-22,Email,Positive engagement
+ACT-00217,CUST-0031,2026-06-25,Executive Meeting,Positive engagement
+ACT-00218,CUST-0031,2026-02-01,Executive Meeting,Completed
+ACT-00219,CUST-0031,2026-07-21,Email,Follow-up required
+ACT-00220,CUST-0031,2026-03-17,Email,Follow-up required
+ACT-00221,CUST-0031,2026-07-07,Renewal Review,Positive engagement
+ACT-00222,CUST-0031,2026-02-10,Renewal Review,Follow-up required
+ACT-00223,CUST-0032,2026-05-13,Renewal Review,Positive engagement
+ACT-00224,CUST-0032,2026-06-07,Call,Positive engagement
+ACT-00225,CUST-0032,2026-02-17,Call,Follow-up required
+ACT-00226,CUST-0032,2026-07-02,CSM Follow-up,Positive engagement
+ACT-00227,CUST-0032,2026-03-03,CSM Follow-up,Follow-up required
+ACT-00228,CUST-0032,2026-07-05,Renewal Review,Positive engagement
+ACT-00229,CUST-0032,2026-04-16,Email,Follow-up required
+ACT-00230,CUST-0032,2026-05-09,Email,Completed
+ACT-00231,CUST-0032,2026-03-28,CSM Follow-up,Follow-up required
+ACT-00232,CUST-0032,2026-02-13,CSM Follow-up,Follow-up required
+ACT-00233,CUST-0032,2026-06-27,Executive Meeting,Completed
+ACT-00234,CUST-0033,2026-03-17,Executive Meeting,Follow-up required
+ACT-00235,CUST-0033,2026-03-19,Call,Positive engagement
+ACT-00236,CUST-0033,2026-07-27,Renewal Review,Positive engagement
+ACT-00237,CUST-0033,2026-07-02,Renewal Review,Follow-up required
+ACT-00238,CUST-0033,2026-06-30,Renewal Review,Completed
+ACT-00239,CUST-0033,2026-07-07,CSM Follow-up,Completed
+ACT-00240,CUST-0033,2026-02-18,Executive Meeting,Completed
+ACT-00241,CUST-0034,2026-07-20,Call,Completed
+ACT-00242,CUST-0034,2026-03-27,CSM Follow-up,Completed
+ACT-00243,CUST-0034,2026-06-12,CSM Follow-up,Positive engagement
+ACT-00244,CUST-0034,2026-03-16,Email,Completed
+ACT-00245,CUST-0034,2026-05-17,Email,Completed
+ACT-00246,CUST-0034,2026-07-20,Email,Positive engagement
+ACT-00247,CUST-0034,2026-07-20,Executive Meeting,Completed
+ACT-00248,CUST-0034,2026-06-20,Email,Completed
+ACT-00249,CUST-0034,2026-05-06,Renewal Review,Positive engagement
+ACT-00250,CUST-0034,2026-06-12,Renewal Review,Positive engagement
+ACT-00251,CUST-0035,2026-03-10,Email,Completed
+ACT-00252,CUST-0035,2026-05-25,Email,Positive engagement
+ACT-00253,CUST-0035,2026-06-18,Renewal Review,Positive engagement
+ACT-00254,CUST-0035,2026-07-01,Executive Meeting,Positive engagement
+ACT-00255,CUST-0035,2026-06-11,Email,Completed
+ACT-00256,CUST-0035,2026-06-20,CSM Follow-up,Follow-up required
+ACT-00257,CUST-0035,2026-04-19,Renewal Review,Completed
+ACT-00258,CUST-0035,2026-03-14,Email,Follow-up required
+ACT-00259,CUST-0035,2026-05-03,Renewal Review,Positive engagement
+ACT-00260,CUST-0035,2026-04-01,Renewal Review,Follow-up required
+ACT-00261,CUST-0035,2026-06-10,Executive Meeting,Follow-up required
+ACT-00262,CUST-0036,2026-06-19,Call,Completed
+ACT-00263,CUST-0036,2026-02-07,Executive Meeting,Positive engagement
+ACT-00264,CUST-0036,2026-02-12,CSM Follow-up,Follow-up required
+ACT-00265,CUST-0036,2026-04-23,CSM Follow-up,Positive engagement
+ACT-00266,CUST-0037,2026-03-19,Call,Follow-up required
+ACT-00267,CUST-0037,2026-06-25,Email,Follow-up required
+ACT-00268,CUST-0037,2026-07-03,CSM Follow-up,Completed
+ACT-00269,CUST-0037,2026-07-16,Email,Completed
+ACT-00270,CUST-0037,2026-06-11,CSM Follow-up,Positive engagement
+ACT-00271,CUST-0038,2026-03-15,Renewal Review,Positive engagement
+ACT-00272,CUST-0038,2026-05-20,Renewal Review,Positive engagement
+ACT-00273,CUST-0038,2026-03-11,CSM Follow-up,Positive engagement
+ACT-00274,CUST-0038,2026-05-12,Renewal Review,Positive engagement
+ACT-00275,CUST-0038,2026-06-03,Email,Follow-up required
+ACT-00276,CUST-0038,2026-02-12,Renewal Review,Follow-up required
+ACT-00277,CUST-0038,2026-03-31,Email,Follow-up required
+ACT-00278,CUST-0038,2026-02-23,Renewal Review,Follow-up required
+ACT-00279,CUST-0039,2026-05-02,CSM Follow-up,Completed
+ACT-00280,CUST-0039,2026-06-07,Renewal Review,Positive engagement
+ACT-00281,CUST-0039,2026-04-05,Call,Follow-up required
+ACT-00282,CUST-0039,2026-04-14,Renewal Review,Positive engagement
+ACT-00283,CUST-0039,2026-03-30,Executive Meeting,Positive engagement
+ACT-00284,CUST-0040,2026-05-02,Email,Follow-up required
+ACT-00285,CUST-0040,2026-06-29,CSM Follow-up,Completed
+ACT-00286,CUST-0040,2026-04-16,Email,Positive engagement
+ACT-00287,CUST-0040,2026-05-19,Executive Meeting,Positive engagement
+ACT-00288,CUST-0040,2026-05-08,CSM Follow-up,Positive engagement
+ACT-00289,CUST-0040,2026-04-05,Executive Meeting,Positive engagement
+ACT-00290,CUST-0040,2026-05-21,Email,Follow-up required
+ACT-00291,CUST-0040,2026-05-27,Renewal Review,Follow-up required
+ACT-00292,CUST-0040,2026-03-11,Email,Follow-up required
+ACT-00293,CUST-0040,2026-02-03,Call,Positive engagement
+ACT-00294,CUST-0041,2026-02-27,CSM Follow-up,Completed
+ACT-00295,CUST-0041,2026-03-13,Executive Meeting,Positive engagement
+ACT-00296,CUST-0041,2026-04-04,CSM Follow-up,Follow-up required
+ACT-00297,CUST-0041,2026-06-19,Renewal Review,Completed
+ACT-00298,CUST-0041,2026-02-01,Renewal Review,Positive engagement
+ACT-00299,CUST-0041,2026-03-29,Executive Meeting,Positive engagement
+ACT-00300,CUST-0041,2026-05-14,Renewal Review,Positive engagement
+ACT-00301,CUST-0041,2026-06-09,Call,Positive engagement
+ACT-00302,CUST-0041,2026-02-11,CSM Follow-up,Completed
+ACT-00303,CUST-0042,2026-05-13,CSM Follow-up,Completed
+ACT-00304,CUST-0042,2026-06-15,CSM Follow-up,Positive engagement
+ACT-00305,CUST-0042,2026-06-28,Email,Follow-up required
+ACT-00306,CUST-0042,2026-02-06,Renewal Review,Completed
+ACT-00307,CUST-0042,2026-02-23,Executive Meeting,Completed
+ACT-00308,CUST-0042,2026-03-27,Email,Positive engagement
+ACT-00309,CUST-0042,2026-04-05,Executive Meeting,Positive engagement
+ACT-00310,CUST-0042,2026-07-04,Call,Completed
+ACT-00311,CUST-0043,2026-02-28,Call,Completed
+ACT-00312,CUST-0043,2026-06-02,CSM Follow-up,Completed
+ACT-00313,CUST-0043,2026-04-29,Call,Completed
+ACT-00314,CUST-0043,2026-02-12,Executive Meeting,Follow-up required
+ACT-00315,CUST-0043,2026-06-23,Renewal Review,Completed
+ACT-00316,CUST-0043,2026-05-14,Executive Meeting,Positive engagement
+ACT-00317,CUST-0043,2026-02-06,Call,Follow-up required
+ACT-00318,CUST-0043,2026-04-13,Executive Meeting,Follow-up required
+ACT-00319,CUST-0043,2026-03-10,Executive Meeting,Completed
+ACT-00320,CUST-0043,2026-07-08,Email,Follow-up required
+ACT-00321,CUST-0044,2026-07-17,Email,Completed
+ACT-00322,CUST-0044,2026-07-29,Executive Meeting,Follow-up required
+ACT-00323,CUST-0044,2026-02-08,Renewal Review,Follow-up required
+ACT-00324,CUST-0044,2026-05-14,Email,Follow-up required
+ACT-00325,CUST-0044,2026-06-04,Email,Positive engagement
+ACT-00326,CUST-0044,2026-03-05,Executive Meeting,Positive engagement
+ACT-00327,CUST-0044,2026-06-18,Renewal Review,Positive engagement
+ACT-00328,CUST-0044,2026-07-12,Email,Positive engagement
+ACT-00329,CUST-0044,2026-06-19,Email,Follow-up required
+ACT-00330,CUST-0045,2026-06-22,Call,Completed
+ACT-00331,CUST-0045,2026-04-11,Email,Follow-up required
+ACT-00332,CUST-0045,2026-04-11,CSM Follow-up,Positive engagement
+ACT-00333,CUST-0045,2026-02-27,Call,Follow-up required
+ACT-00334,CUST-0045,2026-07-10,Call,Follow-up required
+ACT-00335,CUST-0045,2026-07-11,CSM Follow-up,Follow-up required
+ACT-00336,CUST-0045,2026-06-20,CSM Follow-up,Positive engagement
+ACT-00337,CUST-0045,2026-07-20,Renewal Review,Positive engagement
+ACT-00338,CUST-0045,2026-04-05,Renewal Review,Follow-up required
+ACT-00339,CUST-0045,2026-07-29,Renewal Review,Positive engagement
+ACT-00340,CUST-0045,2026-05-24,Executive Meeting,Positive engagement
+ACT-00341,CUST-0046,2026-06-26,Executive Meeting,Positive engagement
+ACT-00342,CUST-0046,2026-02-24,Executive Meeting,Follow-up required
+ACT-00343,CUST-0046,2026-07-01,Executive Meeting,Follow-up required
+ACT-00344,CUST-0046,2026-07-19,Email,Completed
+ACT-00345,CUST-0046,2026-03-04,Renewal Review,Completed
+ACT-00346,CUST-0046,2026-07-04,Call,Completed
+ACT-00347,CUST-0046,2026-07-26,CSM Follow-up,Follow-up required
+ACT-00348,CUST-0046,2026-04-05,CSM Follow-up,Positive engagement
+ACT-00349,CUST-0046,2026-02-12,Executive Meeting,Completed
+ACT-00350,CUST-0046,2026-02-19,CSM Follow-up,Completed
+ACT-00351,CUST-0047,2026-07-25,Email,Completed
+ACT-00352,CUST-0047,2026-07-03,Renewal Review,Positive engagement
+ACT-00353,CUST-0047,2026-05-13,Call,Follow-up required
+ACT-00354,CUST-0047,2026-04-22,Call,Follow-up required
+ACT-00355,CUST-0047,2026-07-16,Call,Completed
+ACT-00356,CUST-0047,2026-06-12,Renewal Review,Follow-up required
+ACT-00357,CUST-0047,2026-04-25,Executive Meeting,Positive engagement
+ACT-00358,CUST-0047,2026-02-15,CSM Follow-up,Follow-up required
+ACT-00359,CUST-0047,2026-02-02,Email,Completed
+ACT-00360,CUST-0047,2026-07-03,Renewal Review,Follow-up required
+ACT-00361,CUST-0048,2026-04-18,Renewal Review,Follow-up required
+ACT-00362,CUST-0048,2026-03-18,Email,No response
+ACT-00363,CUST-0048,2026-05-08,CSM Follow-up,Follow-up required
+ACT-00364,CUST-0048,2026-06-23,Renewal Review,No response
+ACT-00365,CUST-0048,2026-06-08,CSM Follow-up,No response
+ACT-00366,CUST-0048,2026-05-23,Executive Meeting,No response
+ACT-00367,CUST-0049,2026-04-22,CSM Follow-up,Follow-up required
+ACT-00368,CUST-0049,2026-06-06,CSM Follow-up,Follow-up required
+ACT-00369,CUST-0049,2026-06-18,Email,Positive engagement
+ACT-00370,CUST-0049,2026-05-27,Executive Meeting,Follow-up required
+ACT-00371,CUST-0049,2026-03-29,Call,Positive engagement
+ACT-00372,CUST-0049,2026-07-06,Email,Follow-up required
+ACT-00373,CUST-0049,2026-03-06,Call,Follow-up required
+ACT-00374,CUST-0049,2026-04-08,CSM Follow-up,Follow-up required
+ACT-00375,CUST-0050,2026-07-13,Call,Follow-up required
+ACT-00376,CUST-0050,2026-04-28,Executive Meeting,Completed
+ACT-00377,CUST-0050,2026-02-28,CSM Follow-up,Positive engagement
+ACT-00378,CUST-0050,2026-04-27,Renewal Review,Positive engagement
+ACT-00379,CUST-0050,2026-04-30,Call,Completed
+ACT-00380,CUST-0050,2026-02-03,CSM Follow-up,Completed
+ACT-00381,CUST-0051,2026-03-03,Call,Completed
+ACT-00382,CUST-0051,2026-04-17,Call,Follow-up required
+ACT-00383,CUST-0051,2026-05-21,CSM Follow-up,Positive engagement
+ACT-00384,CUST-0051,2026-07-19,CSM Follow-up,Follow-up required
+ACT-00385,CUST-0051,2026-05-14,Call,Follow-up required
+ACT-00386,CUST-0051,2026-07-07,Email,Follow-up required
+ACT-00387,CUST-0052,2026-02-27,Email,No response
+ACT-00388,CUST-0052,2026-02-26,Email,No response
+ACT-00389,CUST-0052,2026-06-09,Executive Meeting,Positive engagement
+ACT-00390,CUST-0052,2026-07-14,CSM Follow-up,Completed
+ACT-00391,CUST-0053,2026-02-04,Email,Follow-up required
+ACT-00392,CUST-0053,2026-07-01,Renewal Review,Follow-up required
+ACT-00393,CUST-0053,2026-06-04,CSM Follow-up,Positive engagement
+ACT-00394,CUST-0053,2026-03-05,Call,Completed
+ACT-00395,CUST-0053,2026-03-17,Renewal Review,Positive engagement
+ACT-00396,CUST-0053,2026-05-03,CSM Follow-up,Completed
+ACT-00397,CUST-0053,2026-04-11,CSM Follow-up,Completed
+ACT-00398,CUST-0053,2026-05-16,Executive Meeting,Completed
+ACT-00399,CUST-0053,2026-07-14,CSM Follow-up,Completed
+ACT-00400,CUST-0053,2026-03-10,Email,Completed
+ACT-00401,CUST-0053,2026-02-14,Call,Positive engagement
+ACT-00402,CUST-0053,2026-04-06,Call,Positive engagement
+ACT-00403,CUST-0054,2026-04-29,Call,Follow-up required
+ACT-00404,CUST-0054,2026-04-30,Renewal Review,Positive engagement
+ACT-00405,CUST-0054,2026-05-10,Renewal Review,Completed
+ACT-00406,CUST-0054,2026-05-30,Renewal Review,Follow-up required
+ACT-00407,CUST-0054,2026-07-13,Call,Follow-up required
+ACT-00408,CUST-0054,2026-04-09,Renewal Review,Completed
+ACT-00409,CUST-0054,2026-04-21,Call,Completed
+ACT-00410,CUST-0054,2026-07-22,Renewal Review,Positive engagement
+ACT-00411,CUST-0054,2026-04-01,Renewal Review,Follow-up required
+ACT-00412,CUST-0054,2026-04-06,Executive Meeting,Follow-up required
+ACT-00413,CUST-0054,2026-02-13,Email,Positive engagement
+ACT-00414,CUST-0055,2026-04-07,Executive Meeting,Follow-up required
+ACT-00415,CUST-0055,2026-07-17,CSM Follow-up,No response
+ACT-00416,CUST-0055,2026-03-10,Call,Completed
+ACT-00417,CUST-0055,2026-03-01,Call,Completed
+ACT-00418,CUST-0055,2026-05-26,Executive Meeting,Positive engagement
+ACT-00419,CUST-0055,2026-06-06,Renewal Review,Completed
+ACT-00420,CUST-0055,2026-05-27,CSM Follow-up,Follow-up required
+ACT-00421,CUST-0055,2026-03-25,Call,Positive engagement
+ACT-00422,CUST-0055,2026-07-15,Call,Completed
+ACT-00423,CUST-0055,2026-03-22,Renewal Review,Positive engagement
+ACT-00424,CUST-0056,2026-02-19,CSM Follow-up,Follow-up required
+ACT-00425,CUST-0056,2026-02-04,Renewal Review,Completed
+ACT-00426,CUST-0056,2026-02-18,Renewal Review,Follow-up required
+ACT-00427,CUST-0056,2026-04-05,Email,Follow-up required
+ACT-00428,CUST-0056,2026-04-26,Call,Completed
+ACT-00429,CUST-0056,2026-05-10,Renewal Review,Completed
+ACT-00430,CUST-0057,2026-06-20,Renewal Review,Completed
+ACT-00431,CUST-0057,2026-04-10,Renewal Review,Completed
+ACT-00432,CUST-0057,2026-04-26,Call,Follow-up required
+ACT-00433,CUST-0057,2026-02-04,Email,Positive engagement
+ACT-00434,CUST-0057,2026-07-13,Email,Positive engagement
+ACT-00435,CUST-0057,2026-02-18,CSM Follow-up,Follow-up required
+ACT-00436,CUST-0057,2026-06-02,Renewal Review,Follow-up required
+ACT-00437,CUST-0057,2026-06-12,Email,Follow-up required
+ACT-00438,CUST-0057,2026-04-30,Call,Follow-up required
+ACT-00439,CUST-0058,2026-04-07,Executive Meeting,Follow-up required
+ACT-00440,CUST-0058,2026-04-09,CSM Follow-up,Completed
+ACT-00441,CUST-0058,2026-06-17,Call,Positive engagement
+ACT-00442,CUST-0058,2026-05-04,Email,Follow-up required
+ACT-00443,CUST-0058,2026-07-05,Renewal Review,Completed
+ACT-00444,CUST-0058,2026-05-27,Renewal Review,Completed
+ACT-00445,CUST-0058,2026-02-04,Executive Meeting,Completed
+ACT-00446,CUST-0058,2026-07-15,Renewal Review,Completed
+ACT-00447,CUST-0059,2026-06-18,CSM Follow-up,Positive engagement
+ACT-00448,CUST-0059,2026-06-12,Executive Meeting,Positive engagement
+ACT-00449,CUST-0059,2026-05-10,Renewal Review,Positive engagement
+ACT-00450,CUST-0059,2026-06-29,CSM Follow-up,Positive engagement
+ACT-00451,CUST-0059,2026-06-16,Renewal Review,Completed
+ACT-00452,CUST-0059,2026-07-27,Renewal Review,Completed
+ACT-00453,CUST-0060,2026-04-22,CSM Follow-up,Positive engagement
+ACT-00454,CUST-0060,2026-07-30,Call,Follow-up required
+ACT-00455,CUST-0060,2026-02-27,Executive Meeting,Follow-up required
+ACT-00456,CUST-0060,2026-07-25,Call,Follow-up required
+ACT-00457,CUST-0060,2026-05-08,Call,Completed
+ACT-00458,CUST-0060,2026-02-23,Renewal Review,Positive engagement
+ACT-00459,CUST-0060,2026-05-09,Executive Meeting,Completed
+ACT-00460,CUST-0060,2026-04-10,Call,Completed
+ACT-00461,CUST-0061,2026-07-17,Call,Positive engagement
+ACT-00462,CUST-0061,2026-05-27,Call,Positive engagement
+ACT-00463,CUST-0061,2026-04-02,Call,Positive engagement
+ACT-00464,CUST-0061,2026-02-27,Call,Completed
+ACT-00465,CUST-0061,2026-07-16,Renewal Review,Follow-up required
+ACT-00466,CUST-0061,2026-02-08,CSM Follow-up,Completed
+ACT-00467,CUST-0061,2026-06-26,Call,Completed
+ACT-00468,CUST-0061,2026-06-13,Renewal Review,Completed
+ACT-00469,CUST-0061,2026-06-28,Renewal Review,Completed
+ACT-00470,CUST-0061,2026-03-15,Call,Completed
+ACT-00471,CUST-0061,2026-02-12,Email,Completed
+ACT-00472,CUST-0061,2026-03-20,Call,Completed
+ACT-00473,CUST-0062,2026-02-05,Email,Follow-up required
+ACT-00474,CUST-0062,2026-05-30,CSM Follow-up,No response
+ACT-00475,CUST-0062,2026-02-12,Email,Positive engagement
+ACT-00476,CUST-0062,2026-07-03,Renewal Review,Positive engagement
+ACT-00477,CUST-0063,2026-05-10,Email,Completed
+ACT-00478,CUST-0063,2026-06-21,Email,Follow-up required
+ACT-00479,CUST-0063,2026-03-21,Executive Meeting,Follow-up required
+ACT-00480,CUST-0063,2026-02-24,Executive Meeting,Completed
+ACT-00481,CUST-0063,2026-04-02,Renewal Review,Follow-up required
+ACT-00482,CUST-0063,2026-04-23,Call,Positive engagement
+ACT-00483,CUST-0063,2026-02-22,Renewal Review,Positive engagement
+ACT-00484,CUST-0063,2026-02-13,CSM Follow-up,Follow-up required
+ACT-00485,CUST-0063,2026-05-19,Renewal Review,Positive engagement
+ACT-00486,CUST-0063,2026-03-08,Call,Follow-up required
+ACT-00487,CUST-0063,2026-04-21,CSM Follow-up,Positive engagement
+ACT-00488,CUST-0064,2026-07-24,Email,Completed
+ACT-00489,CUST-0064,2026-02-01,Call,Positive engagement
+ACT-00490,CUST-0064,2026-02-05,CSM Follow-up,Follow-up required
+ACT-00491,CUST-0064,2026-03-19,Email,Follow-up required
+ACT-00492,CUST-0064,2026-04-13,Executive Meeting,Positive engagement
+ACT-00493,CUST-0064,2026-07-01,CSM Follow-up,Follow-up required
+ACT-00494,CUST-0064,2026-02-20,Executive Meeting,Completed
+ACT-00495,CUST-0064,2026-07-27,Email,Follow-up required
+ACT-00496,CUST-0064,2026-05-22,CSM Follow-up,Follow-up required
+ACT-00497,CUST-0065,2026-02-24,Email,Completed
+ACT-00498,CUST-0065,2026-07-16,CSM Follow-up,Follow-up required
+ACT-00499,CUST-0065,2026-04-18,Email,Positive engagement
+ACT-00500,CUST-0065,2026-02-24,Call,Follow-up required
+ACT-00501,CUST-0065,2026-02-01,CSM Follow-up,Positive engagement
+ACT-00502,CUST-0065,2026-04-24,Email,Follow-up required
+ACT-00503,CUST-0065,2026-07-08,Renewal Review,Follow-up required
+ACT-00504,CUST-0065,2026-07-09,CSM Follow-up,Completed
+ACT-00505,CUST-0066,2026-07-08,Email,No response
+ACT-00506,CUST-0066,2026-06-24,Call,No response
+ACT-00507,CUST-0066,2026-06-21,Call,No response
+ACT-00508,CUST-0066,2026-03-09,CSM Follow-up,Positive engagement
+ACT-00509,CUST-0066,2026-06-25,Renewal Review,No response
+ACT-00510,CUST-0066,2026-05-11,Renewal Review,Completed
+ACT-00511,CUST-0066,2026-06-16,Call,Positive engagement
+ACT-00512,CUST-0066,2026-06-23,Renewal Review,Positive engagement
+ACT-00513,CUST-0066,2026-03-03,CSM Follow-up,Positive engagement
+ACT-00514,CUST-0066,2026-07-20,CSM Follow-up,Completed
+ACT-00515,CUST-0066,2026-05-05,Email,No response
+ACT-00516,CUST-0066,2026-07-02,CSM Follow-up,No response
+ACT-00517,CUST-0067,2026-02-20,Renewal Review,Follow-up required
+ACT-00518,CUST-0067,2026-05-08,Email,Positive engagement
+ACT-00519,CUST-0067,2026-07-03,Call,Completed
+ACT-00520,CUST-0067,2026-02-06,Email,Completed
+ACT-00521,CUST-0067,2026-05-22,Executive Meeting,Follow-up required
+ACT-00522,CUST-0067,2026-07-12,Renewal Review,Positive engagement
+ACT-00523,CUST-0067,2026-06-24,Call,Follow-up required
+ACT-00524,CUST-0067,2026-02-04,Executive Meeting,Completed
+ACT-00525,CUST-0067,2026-06-22,Email,Positive engagement
+ACT-00526,CUST-0067,2026-05-06,Call,Completed
+ACT-00527,CUST-0067,2026-05-30,Executive Meeting,Follow-up required
+ACT-00528,CUST-0068,2026-04-22,Email,Follow-up required
+ACT-00529,CUST-0068,2026-04-16,Email,Completed
+ACT-00530,CUST-0068,2026-06-05,Executive Meeting,No response
+ACT-00531,CUST-0068,2026-03-20,Email,No response
+ACT-00532,CUST-0068,2026-07-23,Renewal Review,No response
+ACT-00533,CUST-0068,2026-02-24,Renewal Review,Follow-up required
+ACT-00534,CUST-0068,2026-03-08,CSM Follow-up,No response
+ACT-00535,CUST-0068,2026-03-14,Call,Follow-up required
+ACT-00536,CUST-0068,2026-04-27,Renewal Review,Follow-up required
+ACT-00537,CUST-0068,2026-02-14,Executive Meeting,Follow-up required
+ACT-00538,CUST-0068,2026-04-10,Call,No response
+ACT-00539,CUST-0068,2026-06-22,Executive Meeting,Follow-up required
+ACT-00540,CUST-0069,2026-02-12,Executive Meeting,Follow-up required
+ACT-00541,CUST-0069,2026-06-10,Call,Completed
+ACT-00542,CUST-0069,2026-06-28,Call,Completed
+ACT-00543,CUST-0069,2026-05-05,CSM Follow-up,Completed
+ACT-00544,CUST-0069,2026-06-28,Email,Positive engagement
+ACT-00545,CUST-0069,2026-02-13,Email,Positive engagement
+ACT-00546,CUST-0069,2026-05-14,Call,Positive engagement
+ACT-00547,CUST-0069,2026-04-29,CSM Follow-up,Follow-up required
+ACT-00548,CUST-0069,2026-02-14,CSM Follow-up,Completed
+ACT-00549,CUST-0069,2026-03-27,Call,Follow-up required
+ACT-00550,CUST-0069,2026-06-01,Call,Positive engagement
+ACT-00551,CUST-0070,2026-06-24,Renewal Review,Follow-up required
+ACT-00552,CUST-0070,2026-04-13,Email,Completed
+ACT-00553,CUST-0070,2026-02-23,CSM Follow-up,Positive engagement
+ACT-00554,CUST-0070,2026-07-17,Renewal Review,Completed
+ACT-00555,CUST-0070,2026-03-14,Executive Meeting,Positive engagement
+ACT-00556,CUST-0070,2026-05-27,Call,Completed
+ACT-00557,CUST-0071,2026-05-19,Email,Follow-up required
+ACT-00558,CUST-0071,2026-06-19,Executive Meeting,Completed
+ACT-00559,CUST-0071,2026-06-04,Email,Completed
+ACT-00560,CUST-0071,2026-05-01,Renewal Review,Positive engagement
+ACT-00561,CUST-0071,2026-07-29,Email,Completed
+ACT-00562,CUST-0071,2026-03-02,Renewal Review,Follow-up required
+ACT-00563,CUST-0072,2026-07-07,Call,Follow-up required
+ACT-00564,CUST-0072,2026-02-28,Email,Follow-up required
+ACT-00565,CUST-0072,2026-03-20,CSM Follow-up,Completed
+ACT-00566,CUST-0072,2026-02-12,Executive Meeting,Completed
+ACT-00567,CUST-0073,2026-02-14,Renewal Review,No response
+ACT-00568,CUST-0073,2026-02-12,Email,Follow-up required
+ACT-00569,CUST-0073,2026-07-02,Executive Meeting,Completed
+ACT-00570,CUST-0073,2026-06-04,Executive Meeting,Positive engagement
+ACT-00571,CUST-0073,2026-02-23,Renewal Review,Follow-up required
+ACT-00572,CUST-0073,2026-06-24,Executive Meeting,Completed
+ACT-00573,CUST-0073,2026-07-16,Call,Positive engagement
+ACT-00574,CUST-0073,2026-05-31,CSM Follow-up,Positive engagement
+ACT-00575,CUST-0073,2026-03-27,CSM Follow-up,No response
+ACT-00576,CUST-0073,2026-07-03,Executive Meeting,No response
+ACT-00577,CUST-0073,2026-06-01,Email,No response
+ACT-00578,CUST-0074,2026-07-10,Renewal Review,Completed
+ACT-00579,CUST-0074,2026-06-02,Call,Follow-up required
+ACT-00580,CUST-0074,2026-06-18,Email,Completed
+ACT-00581,CUST-0074,2026-02-19,Email,Follow-up required
+ACT-00582,CUST-0074,2026-04-27,Email,Completed
+ACT-00583,CUST-0075,2026-06-24,Renewal Review,Follow-up required
+ACT-00584,CUST-0075,2026-03-29,Call,Completed
+ACT-00585,CUST-0075,2026-05-31,Executive Meeting,Completed
+ACT-00586,CUST-0075,2026-05-04,CSM Follow-up,Follow-up required
+ACT-00587,CUST-0075,2026-06-15,Call,Follow-up required
+ACT-00588,CUST-0075,2026-03-11,CSM Follow-up,Positive engagement
+ACT-00589,CUST-0075,2026-02-16,CSM Follow-up,Follow-up required
+ACT-00590,CUST-0075,2026-06-20,CSM Follow-up,Completed
+ACT-00591,CUST-0075,2026-05-21,CSM Follow-up,Completed
+ACT-00592,CUST-0076,2026-03-29,Executive Meeting,Positive engagement
+ACT-00593,CUST-0076,2026-06-09,Call,Completed
+ACT-00594,CUST-0076,2026-04-23,Call,No response
+ACT-00595,CUST-0076,2026-07-12,Executive Meeting,No response
+ACT-00596,CUST-0076,2026-03-08,Renewal Review,No response
+ACT-00597,CUST-0076,2026-04-27,Email,No response
+ACT-00598,CUST-0076,2026-05-25,Executive Meeting,Follow-up required
+ACT-00599,CUST-0076,2026-05-04,CSM Follow-up,Follow-up required
+ACT-00600,CUST-0076,2026-02-21,Executive Meeting,Completed
+ACT-00601,CUST-0076,2026-03-25,Renewal Review,No response
+ACT-00602,CUST-0076,2026-02-03,Renewal Review,No response
+ACT-00603,CUST-0076,2026-04-27,Executive Meeting,No response
+ACT-00604,CUST-0077,2026-07-12,Executive Meeting,Positive engagement
+ACT-00605,CUST-0077,2026-02-08,Renewal Review,Completed
+ACT-00606,CUST-0077,2026-04-01,Email,Completed
+ACT-00607,CUST-0077,2026-02-26,CSM Follow-up,Positive engagement
+ACT-00608,CUST-0077,2026-05-11,Email,Positive engagement
+ACT-00609,CUST-0077,2026-07-26,Email,Completed
+ACT-00610,CUST-0077,2026-04-26,Executive Meeting,Positive engagement
+ACT-00611,CUST-0077,2026-05-25,CSM Follow-up,Completed
+ACT-00612,CUST-0077,2026-07-26,Call,Completed
+ACT-00613,CUST-0077,2026-07-13,Email,Follow-up required
+ACT-00614,CUST-0077,2026-07-09,Executive Meeting,Completed
+ACT-00615,CUST-0078,2026-04-10,Email,Positive engagement
+ACT-00616,CUST-0078,2026-03-18,Email,Completed
+ACT-00617,CUST-0078,2026-07-21,Call,Completed
+ACT-00618,CUST-0078,2026-05-24,Executive Meeting,Positive engagement
+ACT-00619,CUST-0078,2026-05-03,Email,Completed
+ACT-00620,CUST-0078,2026-03-13,CSM Follow-up,Positive engagement
+ACT-00621,CUST-0078,2026-02-13,Email,Follow-up required
+ACT-00622,CUST-0078,2026-03-01,Executive Meeting,Completed
+ACT-00623,CUST-0078,2026-03-19,Executive Meeting,Positive engagement
+ACT-00624,CUST-0079,2026-05-24,Renewal Review,Follow-up required
+ACT-00625,CUST-0079,2026-02-09,CSM Follow-up,Follow-up required
+ACT-00626,CUST-0079,2026-02-12,CSM Follow-up,Completed
+ACT-00627,CUST-0079,2026-05-25,Call,Completed
+ACT-00628,CUST-0079,2026-05-30,Renewal Review,Positive engagement
+ACT-00629,CUST-0079,2026-02-13,Executive Meeting,Positive engagement
+ACT-00630,CUST-0079,2026-07-02,Executive Meeting,Positive engagement
+ACT-00631,CUST-0079,2026-02-08,Call,Positive engagement
+ACT-00632,CUST-0080,2026-02-13,Email,Follow-up required
+ACT-00633,CUST-0080,2026-07-24,Renewal Review,No response
+ACT-00634,CUST-0080,2026-04-19,Email,No response
+ACT-00635,CUST-0080,2026-06-29,Email,No response
+ACT-00636,CUST-0080,2026-05-01,Call,Completed
+ACT-00637,CUST-0081,2026-02-12,Renewal Review,Positive engagement
+ACT-00638,CUST-0081,2026-07-29,Executive Meeting,Completed
+ACT-00639,CUST-0081,2026-02-19,Renewal Review,Follow-up required
+ACT-00640,CUST-0081,2026-07-11,Renewal Review,Completed
+ACT-00641,CUST-0081,2026-03-29,Executive Meeting,Positive engagement
+ACT-00642,CUST-0081,2026-07-08,Call,Positive engagement
+ACT-00643,CUST-0081,2026-05-03,Executive Meeting,Completed
+ACT-00644,CUST-0081,2026-05-07,Renewal Review,Follow-up required
+ACT-00645,CUST-0081,2026-03-10,Email,Follow-up required
+ACT-00646,CUST-0081,2026-05-11,Email,Completed
+ACT-00647,CUST-0082,2026-05-16,CSM Follow-up,Positive engagement
+ACT-00648,CUST-0082,2026-06-28,Email,Positive engagement
+ACT-00649,CUST-0082,2026-02-05,CSM Follow-up,Positive engagement
+ACT-00650,CUST-0082,2026-05-21,Renewal Review,Completed
+ACT-00651,CUST-0083,2026-06-20,CSM Follow-up,Positive engagement
+ACT-00652,CUST-0083,2026-05-24,CSM Follow-up,Follow-up required
+ACT-00653,CUST-0083,2026-02-12,Call,Follow-up required
+ACT-00654,CUST-0083,2026-06-09,Executive Meeting,Positive engagement
+ACT-00655,CUST-0083,2026-07-25,Call,Positive engagement
+ACT-00656,CUST-0084,2026-07-20,Call,Positive engagement
+ACT-00657,CUST-0084,2026-04-15,Executive Meeting,Positive engagement
+ACT-00658,CUST-0084,2026-07-29,Executive Meeting,Completed
+ACT-00659,CUST-0084,2026-02-06,Email,Follow-up required
+ACT-00660,CUST-0084,2026-06-06,CSM Follow-up,Follow-up required
+ACT-00661,CUST-0084,2026-03-13,Executive Meeting,Follow-up required
+ACT-00662,CUST-0084,2026-02-03,Call,Completed
+ACT-00663,CUST-0085,2026-02-03,Email,Follow-up required
+ACT-00664,CUST-0085,2026-03-27,CSM Follow-up,Follow-up required
+ACT-00665,CUST-0085,2026-04-07,Call,Follow-up required
+ACT-00666,CUST-0085,2026-03-20,Executive Meeting,Completed
+ACT-00667,CUST-0085,2026-05-29,Renewal Review,Follow-up required
+ACT-00668,CUST-0085,2026-03-20,Renewal Review,Completed
+ACT-00669,CUST-0085,2026-07-11,Call,Positive engagement
+ACT-00670,CUST-0085,2026-06-27,Call,Completed
+ACT-00671,CUST-0085,2026-03-29,Executive Meeting,Follow-up required
+ACT-00672,CUST-0086,2026-02-18,Email,Completed
+ACT-00673,CUST-0086,2026-06-27,Email,Follow-up required
+ACT-00674,CUST-0086,2026-07-24,Email,No response
+ACT-00675,CUST-0086,2026-02-02,Renewal Review,Follow-up required
+ACT-00676,CUST-0086,2026-06-11,Executive Meeting,No response
+ACT-00677,CUST-0087,2026-03-02,Email,Follow-up required
+ACT-00678,CUST-0087,2026-05-12,CSM Follow-up,Completed
+ACT-00679,CUST-0087,2026-03-07,Renewal Review,Completed
+ACT-00680,CUST-0087,2026-04-14,Executive Meeting,Follow-up required
+ACT-00681,CUST-0087,2026-04-27,Renewal Review,Positive engagement
+ACT-00682,CUST-0087,2026-06-20,CSM Follow-up,Follow-up required
+ACT-00683,CUST-0088,2026-02-23,Call,Positive engagement
+ACT-00684,CUST-0088,2026-07-02,CSM Follow-up,Follow-up required
+ACT-00685,CUST-0088,2026-03-15,CSM Follow-up,Completed
+ACT-00686,CUST-0088,2026-04-01,Call,Follow-up required
+ACT-00687,CUST-0088,2026-07-22,Call,Completed
+ACT-00688,CUST-0088,2026-07-28,Call,Follow-up required
+ACT-00689,CUST-0089,2026-05-02,Renewal Review,Completed
+ACT-00690,CUST-0089,2026-02-20,Executive Meeting,Follow-up required
+ACT-00691,CUST-0089,2026-05-30,Email,Positive engagement
+ACT-00692,CUST-0089,2026-07-03,Call,Completed
+ACT-00693,CUST-0089,2026-05-25,Email,Completed
+ACT-00694,CUST-0089,2026-04-30,Call,Completed
+ACT-00695,CUST-0089,2026-06-21,Email,Completed
+ACT-00696,CUST-0089,2026-03-21,CSM Follow-up,Positive engagement
+ACT-00697,CUST-0089,2026-03-16,Email,Positive engagement
+ACT-00698,CUST-0090,2026-02-18,Executive Meeting,Positive engagement
+ACT-00699,CUST-0090,2026-03-04,Renewal Review,Follow-up required
+ACT-00700,CUST-0090,2026-02-02,Executive Meeting,Follow-up required
+ACT-00701,CUST-0090,2026-02-28,Email,Completed
+ACT-00702,CUST-0090,2026-06-18,Executive Meeting,No response
+ACT-00703,CUST-0090,2026-06-21,Email,Follow-up required
+ACT-00704,CUST-0091,2026-07-27,CSM Follow-up,Completed
+ACT-00705,CUST-0091,2026-07-31,Email,Follow-up required
+ACT-00706,CUST-0091,2026-06-23,Renewal Review,Completed
+ACT-00707,CUST-0091,2026-02-13,Executive Meeting,Completed
+ACT-00708,CUST-0091,2026-06-03,Renewal Review,Positive engagement
+ACT-00709,CUST-0091,2026-07-05,Call,Completed
+ACT-00710,CUST-0091,2026-06-21,CSM Follow-up,Positive engagement
+ACT-00711,CUST-0091,2026-03-12,Renewal Review,Positive engagement
+ACT-00712,CUST-0091,2026-06-03,Call,Positive engagement
+ACT-00713,CUST-0091,2026-04-12,Executive Meeting,Follow-up required
+ACT-00714,CUST-0091,2026-02-14,Email,Positive engagement
+ACT-00715,CUST-0092,2026-03-16,CSM Follow-up,No response
+ACT-00716,CUST-0092,2026-02-14,Call,Positive engagement
+ACT-00717,CUST-0092,2026-04-17,Renewal Review,No response
+ACT-00718,CUST-0092,2026-03-31,Call,Completed
+ACT-00719,CUST-0092,2026-02-16,Executive Meeting,No response
+ACT-00720,CUST-0092,2026-04-13,CSM Follow-up,Positive engagement
+ACT-00721,CUST-0093,2026-03-06,Renewal Review,Positive engagement
+ACT-00722,CUST-0093,2026-03-01,Email,Follow-up required
+ACT-00723,CUST-0093,2026-05-04,Renewal Review,Positive engagement
+ACT-00724,CUST-0093,2026-03-23,Email,Positive engagement
+ACT-00725,CUST-0093,2026-03-05,Email,Completed
+ACT-00726,CUST-0093,2026-02-10,Call,Completed
+ACT-00727,CUST-0093,2026-04-12,Call,Completed
+ACT-00728,CUST-0094,2026-03-06,CSM Follow-up,Follow-up required
+ACT-00729,CUST-0094,2026-05-03,Call,Positive engagement
+ACT-00730,CUST-0094,2026-02-27,Call,Follow-up required
+ACT-00731,CUST-0094,2026-03-22,Email,Completed
+ACT-00732,CUST-0094,2026-06-09,Email,Follow-up required
+ACT-00733,CUST-0094,2026-04-27,Email,Follow-up required
+ACT-00734,CUST-0095,2026-05-13,Call,Completed
+ACT-00735,CUST-0095,2026-07-25,Email,Follow-up required
+ACT-00736,CUST-0095,2026-07-03,Call,Follow-up required
+ACT-00737,CUST-0095,2026-05-28,CSM Follow-up,Follow-up required
+ACT-00738,CUST-0095,2026-05-13,Renewal Review,Completed
+ACT-00739,CUST-0095,2026-07-07,Renewal Review,Completed
+ACT-00740,CUST-0095,2026-03-06,Email,Positive engagement
+ACT-00741,CUST-0095,2026-02-06,Call,Positive engagement
+ACT-00742,CUST-0096,2026-05-18,Email,Follow-up required
+ACT-00743,CUST-0096,2026-04-18,CSM Follow-up,Positive engagement
+ACT-00744,CUST-0096,2026-02-11,Call,Positive engagement
+ACT-00745,CUST-0096,2026-06-16,Call,Completed
+ACT-00746,CUST-0096,2026-02-08,Executive Meeting,Completed
+ACT-00747,CUST-0097,2026-04-12,Email,Positive engagement
+ACT-00748,CUST-0097,2026-05-11,CSM Follow-up,Completed
+ACT-00749,CUST-0097,2026-03-11,Renewal Review,Completed
+ACT-00750,CUST-0097,2026-03-24,Email,Follow-up required
+ACT-00751,CUST-0097,2026-06-05,Email,Positive engagement
+ACT-00752,CUST-0097,2026-02-15,Executive Meeting,Follow-up required
+ACT-00753,CUST-0097,2026-06-23,Executive Meeting,Follow-up required
+ACT-00754,CUST-0097,2026-05-12,CSM Follow-up,Completed
+ACT-00755,CUST-0097,2026-05-10,Call,Positive engagement
+ACT-00756,CUST-0097,2026-05-12,Call,Completed
+ACT-00757,CUST-0097,2026-06-27,Renewal Review,Follow-up required
+ACT-00758,CUST-0097,2026-05-04,Executive Meeting,Completed
+ACT-00759,CUST-0098,2026-06-29,Executive Meeting,Follow-up required
+ACT-00760,CUST-0098,2026-04-18,Email,Follow-up required
+ACT-00761,CUST-0098,2026-05-22,CSM Follow-up,Completed
+ACT-00762,CUST-0098,2026-07-26,Executive Meeting,Positive engagement
+ACT-00763,CUST-0098,2026-03-21,Call,Positive engagement
+ACT-00764,CUST-0098,2026-05-18,Executive Meeting,Completed
+ACT-00765,CUST-0098,2026-04-19,Renewal Review,Follow-up required
+ACT-00766,CUST-0098,2026-03-15,CSM Follow-up,Completed
+ACT-00767,CUST-0099,2026-03-16,CSM Follow-up,No response
+ACT-00768,CUST-0099,2026-03-03,Email,No response
+ACT-00769,CUST-0099,2026-03-10,Executive Meeting,No response
+ACT-00770,CUST-0099,2026-05-17,Call,Positive engagement
+ACT-00771,CUST-0099,2026-04-29,Renewal Review,Follow-up required
+ACT-00772,CUST-0099,2026-07-23,Call,No response
+ACT-00773,CUST-0100,2026-06-12,Email,Positive engagement
+ACT-00774,CUST-0100,2026-06-07,Renewal Review,Positive engagement
+ACT-00775,CUST-0100,2026-07-09,Email,Positive engagement
+ACT-00776,CUST-0100,2026-07-10,CSM Follow-up,Completed
+ACT-00777,CUST-0100,2026-07-14,Call,Positive engagement
+ACT-00778,CUST-0100,2026-04-21,Email,Positive engagement
+ACT-00779,CUST-0100,2026-07-04,Renewal Review,Positive engagement
+ACT-00780,CUST-0100,2026-05-09,Executive Meeting,Completed
+ACT-00781,CUST-0100,2026-03-24,Renewal Review,Follow-up required
+ACT-00782,CUST-0100,2026-04-03,Call,Positive engagement
+ACT-00783,CUST-0100,2026-04-14,CSM Follow-up,Completed
+ACT-00784,CUST-0100,2026-05-05,Email,Follow-up required

@@ -1,0 +1,3298 @@
+[
+  {
+    "note_id": "NOTE-00001",
+    "customer_id": "CUST-0001",
+    "meeting_date": "2026-04-02",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00002",
+    "customer_id": "CUST-0001",
+    "meeting_date": "2026-04-08",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00003",
+    "customer_id": "CUST-0001",
+    "meeting_date": "2026-07-27",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00004",
+    "customer_id": "CUST-0001",
+    "meeting_date": "2026-05-05",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00005",
+    "customer_id": "CUST-0001",
+    "meeting_date": "2026-05-15",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00006",
+    "customer_id": "CUST-0001",
+    "meeting_date": "2026-05-31",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00007",
+    "customer_id": "CUST-0002",
+    "meeting_date": "2026-07-23",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00008",
+    "customer_id": "CUST-0002",
+    "meeting_date": "2026-04-26",
+    "meeting_type": "Technical Review",
+    "attendees": 6,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00009",
+    "customer_id": "CUST-0002",
+    "meeting_date": "2026-04-10",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00010",
+    "customer_id": "CUST-0002",
+    "meeting_date": "2026-05-04",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00011",
+    "customer_id": "CUST-0002",
+    "meeting_date": "2026-06-25",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00012",
+    "customer_id": "CUST-0002",
+    "meeting_date": "2026-05-10",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00013",
+    "customer_id": "CUST-0003",
+    "meeting_date": "2026-05-09",
+    "meeting_type": "Onboarding",
+    "attendees": 5,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00014",
+    "customer_id": "CUST-0003",
+    "meeting_date": "2026-03-26",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00015",
+    "customer_id": "CUST-0003",
+    "meeting_date": "2026-03-18",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00016",
+    "customer_id": "CUST-0003",
+    "meeting_date": "2026-06-18",
+    "meeting_type": "Onboarding",
+    "attendees": 6,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00017",
+    "customer_id": "CUST-0003",
+    "meeting_date": "2026-04-27",
+    "meeting_type": "Renewal Planning",
+    "attendees": 4,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00018",
+    "customer_id": "CUST-0003",
+    "meeting_date": "2026-06-11",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00019",
+    "customer_id": "CUST-0004",
+    "meeting_date": "2026-07-03",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 4,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00020",
+    "customer_id": "CUST-0004",
+    "meeting_date": "2026-05-07",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00021",
+    "customer_id": "CUST-0004",
+    "meeting_date": "2026-05-26",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00022",
+    "customer_id": "CUST-0004",
+    "meeting_date": "2026-05-28",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00023",
+    "customer_id": "CUST-0004",
+    "meeting_date": "2026-04-03",
+    "meeting_type": "Renewal Planning",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00024",
+    "customer_id": "CUST-0005",
+    "meeting_date": "2026-03-19",
+    "meeting_type": "Technical Review",
+    "attendees": 2,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00025",
+    "customer_id": "CUST-0005",
+    "meeting_date": "2026-04-15",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00026",
+    "customer_id": "CUST-0005",
+    "meeting_date": "2026-06-20",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00027",
+    "customer_id": "CUST-0005",
+    "meeting_date": "2026-03-13",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00028",
+    "customer_id": "CUST-0006",
+    "meeting_date": "2026-04-21",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00029",
+    "customer_id": "CUST-0006",
+    "meeting_date": "2026-02-15",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00030",
+    "customer_id": "CUST-0006",
+    "meeting_date": "2026-07-19",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00031",
+    "customer_id": "CUST-0006",
+    "meeting_date": "2026-07-25",
+    "meeting_type": "Onboarding",
+    "attendees": 6,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00032",
+    "customer_id": "CUST-0007",
+    "meeting_date": "2026-06-07",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00033",
+    "customer_id": "CUST-0007",
+    "meeting_date": "2026-05-03",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00034",
+    "customer_id": "CUST-0008",
+    "meeting_date": "2026-05-06",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00035",
+    "customer_id": "CUST-0008",
+    "meeting_date": "2026-02-24",
+    "meeting_type": "Renewal Planning",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00036",
+    "customer_id": "CUST-0009",
+    "meeting_date": "2026-03-13",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 4,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00037",
+    "customer_id": "CUST-0009",
+    "meeting_date": "2026-07-19",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00038",
+    "customer_id": "CUST-0009",
+    "meeting_date": "2026-06-10",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00039",
+    "customer_id": "CUST-0009",
+    "meeting_date": "2026-07-25",
+    "meeting_type": "Technical Review",
+    "attendees": 2,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00040",
+    "customer_id": "CUST-0010",
+    "meeting_date": "2026-06-08",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00041",
+    "customer_id": "CUST-0010",
+    "meeting_date": "2026-03-14",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00042",
+    "customer_id": "CUST-0011",
+    "meeting_date": "2026-05-17",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00043",
+    "customer_id": "CUST-0011",
+    "meeting_date": "2026-03-10",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00044",
+    "customer_id": "CUST-0011",
+    "meeting_date": "2026-05-27",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00045",
+    "customer_id": "CUST-0011",
+    "meeting_date": "2026-07-25",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00046",
+    "customer_id": "CUST-0011",
+    "meeting_date": "2026-05-31",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00047",
+    "customer_id": "CUST-0011",
+    "meeting_date": "2026-07-16",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 8,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00048",
+    "customer_id": "CUST-0012",
+    "meeting_date": "2026-05-24",
+    "meeting_type": "Renewal Planning",
+    "attendees": 2,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00049",
+    "customer_id": "CUST-0012",
+    "meeting_date": "2026-02-07",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00050",
+    "customer_id": "CUST-0012",
+    "meeting_date": "2026-07-17",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00051",
+    "customer_id": "CUST-0013",
+    "meeting_date": "2026-03-11",
+    "meeting_type": "Technical Review",
+    "attendees": 8,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00052",
+    "customer_id": "CUST-0013",
+    "meeting_date": "2026-07-25",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00053",
+    "customer_id": "CUST-0014",
+    "meeting_date": "2026-03-20",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00054",
+    "customer_id": "CUST-0014",
+    "meeting_date": "2026-07-20",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00055",
+    "customer_id": "CUST-0014",
+    "meeting_date": "2026-05-20",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00056",
+    "customer_id": "CUST-0014",
+    "meeting_date": "2026-06-27",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00057",
+    "customer_id": "CUST-0015",
+    "meeting_date": "2026-05-13",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00058",
+    "customer_id": "CUST-0015",
+    "meeting_date": "2026-07-11",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00059",
+    "customer_id": "CUST-0015",
+    "meeting_date": "2026-02-09",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00060",
+    "customer_id": "CUST-0016",
+    "meeting_date": "2026-04-30",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00061",
+    "customer_id": "CUST-0016",
+    "meeting_date": "2026-03-12",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00062",
+    "customer_id": "CUST-0016",
+    "meeting_date": "2026-02-07",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00063",
+    "customer_id": "CUST-0016",
+    "meeting_date": "2026-07-12",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00064",
+    "customer_id": "CUST-0016",
+    "meeting_date": "2026-03-05",
+    "meeting_type": "Renewal Planning",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00065",
+    "customer_id": "CUST-0016",
+    "meeting_date": "2026-07-19",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00066",
+    "customer_id": "CUST-0017",
+    "meeting_date": "2026-03-11",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00067",
+    "customer_id": "CUST-0017",
+    "meeting_date": "2026-07-30",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00068",
+    "customer_id": "CUST-0017",
+    "meeting_date": "2026-07-06",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00069",
+    "customer_id": "CUST-0018",
+    "meeting_date": "2026-07-27",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00070",
+    "customer_id": "CUST-0018",
+    "meeting_date": "2026-05-02",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00071",
+    "customer_id": "CUST-0018",
+    "meeting_date": "2026-05-21",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00072",
+    "customer_id": "CUST-0018",
+    "meeting_date": "2026-06-01",
+    "meeting_type": "Onboarding",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00073",
+    "customer_id": "CUST-0018",
+    "meeting_date": "2026-05-29",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00074",
+    "customer_id": "CUST-0019",
+    "meeting_date": "2026-06-08",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00075",
+    "customer_id": "CUST-0019",
+    "meeting_date": "2026-06-10",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00076",
+    "customer_id": "CUST-0019",
+    "meeting_date": "2026-02-10",
+    "meeting_type": "Technical Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00077",
+    "customer_id": "CUST-0019",
+    "meeting_date": "2026-03-12",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00078",
+    "customer_id": "CUST-0019",
+    "meeting_date": "2026-06-22",
+    "meeting_type": "Renewal Planning",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00079",
+    "customer_id": "CUST-0019",
+    "meeting_date": "2026-06-24",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00080",
+    "customer_id": "CUST-0020",
+    "meeting_date": "2026-06-07",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00081",
+    "customer_id": "CUST-0020",
+    "meeting_date": "2026-04-09",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00082",
+    "customer_id": "CUST-0021",
+    "meeting_date": "2026-06-03",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00083",
+    "customer_id": "CUST-0021",
+    "meeting_date": "2026-05-25",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00084",
+    "customer_id": "CUST-0021",
+    "meeting_date": "2026-03-26",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00085",
+    "customer_id": "CUST-0021",
+    "meeting_date": "2026-03-12",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00086",
+    "customer_id": "CUST-0021",
+    "meeting_date": "2026-06-11",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00087",
+    "customer_id": "CUST-0022",
+    "meeting_date": "2026-04-16",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00088",
+    "customer_id": "CUST-0022",
+    "meeting_date": "2026-04-30",
+    "meeting_type": "Renewal Planning",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00089",
+    "customer_id": "CUST-0022",
+    "meeting_date": "2026-07-21",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00090",
+    "customer_id": "CUST-0022",
+    "meeting_date": "2026-05-02",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00091",
+    "customer_id": "CUST-0022",
+    "meeting_date": "2026-07-09",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00092",
+    "customer_id": "CUST-0022",
+    "meeting_date": "2026-05-07",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00093",
+    "customer_id": "CUST-0023",
+    "meeting_date": "2026-04-04",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00094",
+    "customer_id": "CUST-0023",
+    "meeting_date": "2026-07-16",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00095",
+    "customer_id": "CUST-0023",
+    "meeting_date": "2026-05-13",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00096",
+    "customer_id": "CUST-0023",
+    "meeting_date": "2026-02-27",
+    "meeting_type": "Onboarding",
+    "attendees": 5,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00097",
+    "customer_id": "CUST-0023",
+    "meeting_date": "2026-07-22",
+    "meeting_type": "Renewal Planning",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00098",
+    "customer_id": "CUST-0024",
+    "meeting_date": "2026-07-18",
+    "meeting_type": "Renewal Planning",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00099",
+    "customer_id": "CUST-0024",
+    "meeting_date": "2026-03-11",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00100",
+    "customer_id": "CUST-0025",
+    "meeting_date": "2026-03-17",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00101",
+    "customer_id": "CUST-0025",
+    "meeting_date": "2026-02-15",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00102",
+    "customer_id": "CUST-0025",
+    "meeting_date": "2026-05-14",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00103",
+    "customer_id": "CUST-0025",
+    "meeting_date": "2026-05-05",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00104",
+    "customer_id": "CUST-0025",
+    "meeting_date": "2026-04-12",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00105",
+    "customer_id": "CUST-0026",
+    "meeting_date": "2026-04-06",
+    "meeting_type": "Renewal Planning",
+    "attendees": 2,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00106",
+    "customer_id": "CUST-0026",
+    "meeting_date": "2026-03-17",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00107",
+    "customer_id": "CUST-0026",
+    "meeting_date": "2026-02-23",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00108",
+    "customer_id": "CUST-0026",
+    "meeting_date": "2026-02-20",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00109",
+    "customer_id": "CUST-0027",
+    "meeting_date": "2026-04-11",
+    "meeting_type": "Onboarding",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00110",
+    "customer_id": "CUST-0027",
+    "meeting_date": "2026-07-22",
+    "meeting_type": "Technical Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00111",
+    "customer_id": "CUST-0027",
+    "meeting_date": "2026-03-27",
+    "meeting_type": "Technical Review",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00112",
+    "customer_id": "CUST-0027",
+    "meeting_date": "2026-06-08",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00113",
+    "customer_id": "CUST-0027",
+    "meeting_date": "2026-06-03",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00114",
+    "customer_id": "CUST-0028",
+    "meeting_date": "2026-03-16",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00115",
+    "customer_id": "CUST-0028",
+    "meeting_date": "2026-07-21",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00116",
+    "customer_id": "CUST-0028",
+    "meeting_date": "2026-07-17",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00117",
+    "customer_id": "CUST-0028",
+    "meeting_date": "2026-07-20",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00118",
+    "customer_id": "CUST-0029",
+    "meeting_date": "2026-06-27",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00119",
+    "customer_id": "CUST-0029",
+    "meeting_date": "2026-05-22",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00120",
+    "customer_id": "CUST-0029",
+    "meeting_date": "2026-05-30",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00121",
+    "customer_id": "CUST-0030",
+    "meeting_date": "2026-06-25",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00122",
+    "customer_id": "CUST-0030",
+    "meeting_date": "2026-03-28",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00123",
+    "customer_id": "CUST-0031",
+    "meeting_date": "2026-04-01",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00124",
+    "customer_id": "CUST-0031",
+    "meeting_date": "2026-07-05",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00125",
+    "customer_id": "CUST-0031",
+    "meeting_date": "2026-05-24",
+    "meeting_type": "Onboarding",
+    "attendees": 5,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00126",
+    "customer_id": "CUST-0031",
+    "meeting_date": "2026-04-28",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00127",
+    "customer_id": "CUST-0031",
+    "meeting_date": "2026-07-10",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00128",
+    "customer_id": "CUST-0032",
+    "meeting_date": "2026-04-02",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00129",
+    "customer_id": "CUST-0032",
+    "meeting_date": "2026-07-26",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00130",
+    "customer_id": "CUST-0032",
+    "meeting_date": "2026-03-02",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00131",
+    "customer_id": "CUST-0032",
+    "meeting_date": "2026-04-21",
+    "meeting_type": "Renewal Planning",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00132",
+    "customer_id": "CUST-0033",
+    "meeting_date": "2026-07-14",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00133",
+    "customer_id": "CUST-0033",
+    "meeting_date": "2026-04-01",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00134",
+    "customer_id": "CUST-0033",
+    "meeting_date": "2026-03-03",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 8,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00135",
+    "customer_id": "CUST-0033",
+    "meeting_date": "2026-02-07",
+    "meeting_type": "Technical Review",
+    "attendees": 8,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00136",
+    "customer_id": "CUST-0033",
+    "meeting_date": "2026-05-08",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00137",
+    "customer_id": "CUST-0033",
+    "meeting_date": "2026-07-14",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00138",
+    "customer_id": "CUST-0034",
+    "meeting_date": "2026-02-13",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00139",
+    "customer_id": "CUST-0034",
+    "meeting_date": "2026-05-19",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00140",
+    "customer_id": "CUST-0035",
+    "meeting_date": "2026-04-21",
+    "meeting_type": "Renewal Planning",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00141",
+    "customer_id": "CUST-0035",
+    "meeting_date": "2026-05-23",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00142",
+    "customer_id": "CUST-0035",
+    "meeting_date": "2026-05-26",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00143",
+    "customer_id": "CUST-0035",
+    "meeting_date": "2026-05-19",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00144",
+    "customer_id": "CUST-0036",
+    "meeting_date": "2026-07-27",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00145",
+    "customer_id": "CUST-0036",
+    "meeting_date": "2026-04-26",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00146",
+    "customer_id": "CUST-0036",
+    "meeting_date": "2026-05-02",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00147",
+    "customer_id": "CUST-0036",
+    "meeting_date": "2026-03-23",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00148",
+    "customer_id": "CUST-0036",
+    "meeting_date": "2026-06-25",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00149",
+    "customer_id": "CUST-0037",
+    "meeting_date": "2026-02-21",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00150",
+    "customer_id": "CUST-0037",
+    "meeting_date": "2026-06-25",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00151",
+    "customer_id": "CUST-0037",
+    "meeting_date": "2026-07-29",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00152",
+    "customer_id": "CUST-0037",
+    "meeting_date": "2026-02-13",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00153",
+    "customer_id": "CUST-0037",
+    "meeting_date": "2026-02-03",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00154",
+    "customer_id": "CUST-0038",
+    "meeting_date": "2026-06-16",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00155",
+    "customer_id": "CUST-0038",
+    "meeting_date": "2026-05-17",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00156",
+    "customer_id": "CUST-0038",
+    "meeting_date": "2026-04-02",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00157",
+    "customer_id": "CUST-0039",
+    "meeting_date": "2026-06-15",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00158",
+    "customer_id": "CUST-0039",
+    "meeting_date": "2026-06-24",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00159",
+    "customer_id": "CUST-0039",
+    "meeting_date": "2026-05-12",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00160",
+    "customer_id": "CUST-0039",
+    "meeting_date": "2026-07-19",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00161",
+    "customer_id": "CUST-0040",
+    "meeting_date": "2026-04-16",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 4,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00162",
+    "customer_id": "CUST-0040",
+    "meeting_date": "2026-04-07",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00163",
+    "customer_id": "CUST-0040",
+    "meeting_date": "2026-03-04",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00164",
+    "customer_id": "CUST-0040",
+    "meeting_date": "2026-04-04",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00165",
+    "customer_id": "CUST-0041",
+    "meeting_date": "2026-04-12",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00166",
+    "customer_id": "CUST-0041",
+    "meeting_date": "2026-04-14",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00167",
+    "customer_id": "CUST-0041",
+    "meeting_date": "2026-04-09",
+    "meeting_type": "Renewal Planning",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00168",
+    "customer_id": "CUST-0041",
+    "meeting_date": "2026-03-10",
+    "meeting_type": "Renewal Planning",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00169",
+    "customer_id": "CUST-0042",
+    "meeting_date": "2026-05-19",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00170",
+    "customer_id": "CUST-0042",
+    "meeting_date": "2026-06-03",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00171",
+    "customer_id": "CUST-0042",
+    "meeting_date": "2026-07-22",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00172",
+    "customer_id": "CUST-0042",
+    "meeting_date": "2026-04-11",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00173",
+    "customer_id": "CUST-0042",
+    "meeting_date": "2026-02-03",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00174",
+    "customer_id": "CUST-0042",
+    "meeting_date": "2026-03-06",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00175",
+    "customer_id": "CUST-0043",
+    "meeting_date": "2026-02-12",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00176",
+    "customer_id": "CUST-0043",
+    "meeting_date": "2026-04-19",
+    "meeting_type": "Renewal Planning",
+    "attendees": 4,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00177",
+    "customer_id": "CUST-0043",
+    "meeting_date": "2026-03-22",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00178",
+    "customer_id": "CUST-0043",
+    "meeting_date": "2026-04-28",
+    "meeting_type": "Renewal Planning",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00179",
+    "customer_id": "CUST-0043",
+    "meeting_date": "2026-03-05",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00180",
+    "customer_id": "CUST-0044",
+    "meeting_date": "2026-04-13",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00181",
+    "customer_id": "CUST-0044",
+    "meeting_date": "2026-04-19",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00182",
+    "customer_id": "CUST-0044",
+    "meeting_date": "2026-07-07",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00183",
+    "customer_id": "CUST-0044",
+    "meeting_date": "2026-02-08",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00184",
+    "customer_id": "CUST-0045",
+    "meeting_date": "2026-03-02",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00185",
+    "customer_id": "CUST-0045",
+    "meeting_date": "2026-05-30",
+    "meeting_type": "Technical Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00186",
+    "customer_id": "CUST-0045",
+    "meeting_date": "2026-05-03",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00187",
+    "customer_id": "CUST-0046",
+    "meeting_date": "2026-04-26",
+    "meeting_type": "Renewal Planning",
+    "attendees": 4,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00188",
+    "customer_id": "CUST-0046",
+    "meeting_date": "2026-07-11",
+    "meeting_type": "Technical Review",
+    "attendees": 2,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00189",
+    "customer_id": "CUST-0046",
+    "meeting_date": "2026-06-23",
+    "meeting_type": "Onboarding",
+    "attendees": 6,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00190",
+    "customer_id": "CUST-0047",
+    "meeting_date": "2026-03-28",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00191",
+    "customer_id": "CUST-0047",
+    "meeting_date": "2026-07-31",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00192",
+    "customer_id": "CUST-0047",
+    "meeting_date": "2026-04-08",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00193",
+    "customer_id": "CUST-0047",
+    "meeting_date": "2026-03-29",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00194",
+    "customer_id": "CUST-0047",
+    "meeting_date": "2026-06-21",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00195",
+    "customer_id": "CUST-0047",
+    "meeting_date": "2026-03-19",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00196",
+    "customer_id": "CUST-0048",
+    "meeting_date": "2026-02-09",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00197",
+    "customer_id": "CUST-0048",
+    "meeting_date": "2026-04-21",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00198",
+    "customer_id": "CUST-0048",
+    "meeting_date": "2026-05-16",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00199",
+    "customer_id": "CUST-0049",
+    "meeting_date": "2026-04-01",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00200",
+    "customer_id": "CUST-0049",
+    "meeting_date": "2026-06-29",
+    "meeting_type": "Technical Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00201",
+    "customer_id": "CUST-0049",
+    "meeting_date": "2026-06-19",
+    "meeting_type": "Onboarding",
+    "attendees": 6,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00202",
+    "customer_id": "CUST-0049",
+    "meeting_date": "2026-07-17",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00203",
+    "customer_id": "CUST-0050",
+    "meeting_date": "2026-05-09",
+    "meeting_type": "Renewal Planning",
+    "attendees": 2,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00204",
+    "customer_id": "CUST-0050",
+    "meeting_date": "2026-03-12",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00205",
+    "customer_id": "CUST-0050",
+    "meeting_date": "2026-07-20",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00206",
+    "customer_id": "CUST-0050",
+    "meeting_date": "2026-02-17",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00207",
+    "customer_id": "CUST-0051",
+    "meeting_date": "2026-03-26",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00208",
+    "customer_id": "CUST-0051",
+    "meeting_date": "2026-03-12",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00209",
+    "customer_id": "CUST-0051",
+    "meeting_date": "2026-03-14",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00210",
+    "customer_id": "CUST-0051",
+    "meeting_date": "2026-04-13",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00211",
+    "customer_id": "CUST-0052",
+    "meeting_date": "2026-04-28",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00212",
+    "customer_id": "CUST-0052",
+    "meeting_date": "2026-03-24",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00213",
+    "customer_id": "CUST-0052",
+    "meeting_date": "2026-04-01",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00214",
+    "customer_id": "CUST-0052",
+    "meeting_date": "2026-04-26",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00215",
+    "customer_id": "CUST-0052",
+    "meeting_date": "2026-03-25",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00216",
+    "customer_id": "CUST-0053",
+    "meeting_date": "2026-03-23",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00217",
+    "customer_id": "CUST-0053",
+    "meeting_date": "2026-05-31",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00218",
+    "customer_id": "CUST-0053",
+    "meeting_date": "2026-05-21",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 8,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00219",
+    "customer_id": "CUST-0054",
+    "meeting_date": "2026-05-24",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00220",
+    "customer_id": "CUST-0054",
+    "meeting_date": "2026-06-03",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 8,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00221",
+    "customer_id": "CUST-0055",
+    "meeting_date": "2026-04-05",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00222",
+    "customer_id": "CUST-0055",
+    "meeting_date": "2026-04-13",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00223",
+    "customer_id": "CUST-0055",
+    "meeting_date": "2026-02-21",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00224",
+    "customer_id": "CUST-0055",
+    "meeting_date": "2026-06-29",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 8,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00225",
+    "customer_id": "CUST-0056",
+    "meeting_date": "2026-03-16",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00226",
+    "customer_id": "CUST-0056",
+    "meeting_date": "2026-03-28",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00227",
+    "customer_id": "CUST-0056",
+    "meeting_date": "2026-03-05",
+    "meeting_type": "Technical Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00228",
+    "customer_id": "CUST-0056",
+    "meeting_date": "2026-06-29",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00229",
+    "customer_id": "CUST-0056",
+    "meeting_date": "2026-05-28",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00230",
+    "customer_id": "CUST-0057",
+    "meeting_date": "2026-04-16",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00231",
+    "customer_id": "CUST-0057",
+    "meeting_date": "2026-02-15",
+    "meeting_type": "Technical Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00232",
+    "customer_id": "CUST-0057",
+    "meeting_date": "2026-04-08",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00233",
+    "customer_id": "CUST-0058",
+    "meeting_date": "2026-06-02",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00234",
+    "customer_id": "CUST-0058",
+    "meeting_date": "2026-04-08",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00235",
+    "customer_id": "CUST-0059",
+    "meeting_date": "2026-03-19",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00236",
+    "customer_id": "CUST-0059",
+    "meeting_date": "2026-05-10",
+    "meeting_type": "Renewal Planning",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00237",
+    "customer_id": "CUST-0059",
+    "meeting_date": "2026-06-18",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00238",
+    "customer_id": "CUST-0059",
+    "meeting_date": "2026-07-24",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00239",
+    "customer_id": "CUST-0059",
+    "meeting_date": "2026-06-10",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00240",
+    "customer_id": "CUST-0059",
+    "meeting_date": "2026-03-12",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00241",
+    "customer_id": "CUST-0060",
+    "meeting_date": "2026-07-27",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00242",
+    "customer_id": "CUST-0060",
+    "meeting_date": "2026-05-12",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00243",
+    "customer_id": "CUST-0060",
+    "meeting_date": "2026-04-07",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00244",
+    "customer_id": "CUST-0060",
+    "meeting_date": "2026-06-05",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00245",
+    "customer_id": "CUST-0060",
+    "meeting_date": "2026-06-27",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00246",
+    "customer_id": "CUST-0060",
+    "meeting_date": "2026-03-20",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00247",
+    "customer_id": "CUST-0061",
+    "meeting_date": "2026-03-03",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00248",
+    "customer_id": "CUST-0061",
+    "meeting_date": "2026-06-12",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00249",
+    "customer_id": "CUST-0062",
+    "meeting_date": "2026-05-18",
+    "meeting_type": "Renewal Planning",
+    "attendees": 2,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00250",
+    "customer_id": "CUST-0062",
+    "meeting_date": "2026-07-22",
+    "meeting_type": "Onboarding",
+    "attendees": 5,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00251",
+    "customer_id": "CUST-0062",
+    "meeting_date": "2026-02-13",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00252",
+    "customer_id": "CUST-0062",
+    "meeting_date": "2026-07-28",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00253",
+    "customer_id": "CUST-0062",
+    "meeting_date": "2026-03-11",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00254",
+    "customer_id": "CUST-0062",
+    "meeting_date": "2026-07-09",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00255",
+    "customer_id": "CUST-0063",
+    "meeting_date": "2026-04-23",
+    "meeting_type": "Onboarding",
+    "attendees": 5,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00256",
+    "customer_id": "CUST-0063",
+    "meeting_date": "2026-02-27",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00257",
+    "customer_id": "CUST-0063",
+    "meeting_date": "2026-05-11",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00258",
+    "customer_id": "CUST-0063",
+    "meeting_date": "2026-06-23",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00259",
+    "customer_id": "CUST-0063",
+    "meeting_date": "2026-05-04",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00260",
+    "customer_id": "CUST-0063",
+    "meeting_date": "2026-03-01",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00261",
+    "customer_id": "CUST-0064",
+    "meeting_date": "2026-07-26",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00262",
+    "customer_id": "CUST-0064",
+    "meeting_date": "2026-07-16",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00263",
+    "customer_id": "CUST-0064",
+    "meeting_date": "2026-02-01",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00264",
+    "customer_id": "CUST-0064",
+    "meeting_date": "2026-04-16",
+    "meeting_type": "Technical Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00265",
+    "customer_id": "CUST-0065",
+    "meeting_date": "2026-04-20",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00266",
+    "customer_id": "CUST-0065",
+    "meeting_date": "2026-06-13",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00267",
+    "customer_id": "CUST-0066",
+    "meeting_date": "2026-02-04",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00268",
+    "customer_id": "CUST-0066",
+    "meeting_date": "2026-02-06",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00269",
+    "customer_id": "CUST-0066",
+    "meeting_date": "2026-05-07",
+    "meeting_type": "Technical Review",
+    "attendees": 8,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00270",
+    "customer_id": "CUST-0066",
+    "meeting_date": "2026-06-10",
+    "meeting_type": "Onboarding",
+    "attendees": 6,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00271",
+    "customer_id": "CUST-0067",
+    "meeting_date": "2026-03-21",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00272",
+    "customer_id": "CUST-0067",
+    "meeting_date": "2026-04-07",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00273",
+    "customer_id": "CUST-0067",
+    "meeting_date": "2026-05-21",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00274",
+    "customer_id": "CUST-0067",
+    "meeting_date": "2026-07-04",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00275",
+    "customer_id": "CUST-0068",
+    "meeting_date": "2026-03-20",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00276",
+    "customer_id": "CUST-0068",
+    "meeting_date": "2026-06-02",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00277",
+    "customer_id": "CUST-0068",
+    "meeting_date": "2026-05-03",
+    "meeting_type": "Onboarding",
+    "attendees": 5,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00278",
+    "customer_id": "CUST-0068",
+    "meeting_date": "2026-02-21",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00279",
+    "customer_id": "CUST-0069",
+    "meeting_date": "2026-03-09",
+    "meeting_type": "Renewal Planning",
+    "attendees": 3,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00280",
+    "customer_id": "CUST-0069",
+    "meeting_date": "2026-02-08",
+    "meeting_type": "Renewal Planning",
+    "attendees": 7,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00281",
+    "customer_id": "CUST-0070",
+    "meeting_date": "2026-03-11",
+    "meeting_type": "Renewal Planning",
+    "attendees": 4,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00282",
+    "customer_id": "CUST-0070",
+    "meeting_date": "2026-03-02",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00283",
+    "customer_id": "CUST-0070",
+    "meeting_date": "2026-02-11",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00284",
+    "customer_id": "CUST-0071",
+    "meeting_date": "2026-05-14",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00285",
+    "customer_id": "CUST-0071",
+    "meeting_date": "2026-04-04",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00286",
+    "customer_id": "CUST-0071",
+    "meeting_date": "2026-05-16",
+    "meeting_type": "Renewal Planning",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00287",
+    "customer_id": "CUST-0071",
+    "meeting_date": "2026-04-17",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00288",
+    "customer_id": "CUST-0071",
+    "meeting_date": "2026-05-22",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00289",
+    "customer_id": "CUST-0071",
+    "meeting_date": "2026-04-08",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00290",
+    "customer_id": "CUST-0072",
+    "meeting_date": "2026-04-28",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00291",
+    "customer_id": "CUST-0072",
+    "meeting_date": "2026-03-25",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00292",
+    "customer_id": "CUST-0072",
+    "meeting_date": "2026-06-18",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00293",
+    "customer_id": "CUST-0072",
+    "meeting_date": "2026-04-11",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00294",
+    "customer_id": "CUST-0072",
+    "meeting_date": "2026-03-13",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00295",
+    "customer_id": "CUST-0072",
+    "meeting_date": "2026-03-11",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00296",
+    "customer_id": "CUST-0073",
+    "meeting_date": "2026-05-07",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00297",
+    "customer_id": "CUST-0073",
+    "meeting_date": "2026-07-20",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00298",
+    "customer_id": "CUST-0074",
+    "meeting_date": "2026-06-18",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00299",
+    "customer_id": "CUST-0074",
+    "meeting_date": "2026-05-23",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00300",
+    "customer_id": "CUST-0074",
+    "meeting_date": "2026-05-14",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00301",
+    "customer_id": "CUST-0074",
+    "meeting_date": "2026-06-30",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00302",
+    "customer_id": "CUST-0075",
+    "meeting_date": "2026-06-18",
+    "meeting_type": "Onboarding",
+    "attendees": 5,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00303",
+    "customer_id": "CUST-0075",
+    "meeting_date": "2026-04-21",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00304",
+    "customer_id": "CUST-0075",
+    "meeting_date": "2026-07-23",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00305",
+    "customer_id": "CUST-0075",
+    "meeting_date": "2026-06-26",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "The customer raised pricing concerns and requested a reduction in licensed seats before renewal."
+  },
+  {
+    "note_id": "NOTE-00306",
+    "customer_id": "CUST-0075",
+    "meeting_date": "2026-07-14",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00307",
+    "customer_id": "CUST-0075",
+    "meeting_date": "2026-04-22",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00308",
+    "customer_id": "CUST-0076",
+    "meeting_date": "2026-04-14",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00309",
+    "customer_id": "CUST-0076",
+    "meeting_date": "2026-04-21",
+    "meeting_type": "Onboarding",
+    "attendees": 6,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00310",
+    "customer_id": "CUST-0076",
+    "meeting_date": "2026-05-23",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 4,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00311",
+    "customer_id": "CUST-0076",
+    "meeting_date": "2026-07-19",
+    "meeting_type": "Renewal Planning",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00312",
+    "customer_id": "CUST-0076",
+    "meeting_date": "2026-05-23",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00313",
+    "customer_id": "CUST-0077",
+    "meeting_date": "2026-03-19",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00314",
+    "customer_id": "CUST-0077",
+    "meeting_date": "2026-07-27",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00315",
+    "customer_id": "CUST-0077",
+    "meeting_date": "2026-07-07",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00316",
+    "customer_id": "CUST-0078",
+    "meeting_date": "2026-04-14",
+    "meeting_type": "Technical Review",
+    "attendees": 6,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00317",
+    "customer_id": "CUST-0078",
+    "meeting_date": "2026-06-26",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00318",
+    "customer_id": "CUST-0079",
+    "meeting_date": "2026-07-08",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00319",
+    "customer_id": "CUST-0079",
+    "meeting_date": "2026-05-16",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00320",
+    "customer_id": "CUST-0079",
+    "meeting_date": "2026-04-13",
+    "meeting_type": "Renewal Planning",
+    "attendees": 2,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00321",
+    "customer_id": "CUST-0079",
+    "meeting_date": "2026-07-17",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00322",
+    "customer_id": "CUST-0079",
+    "meeting_date": "2026-06-21",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00323",
+    "customer_id": "CUST-0080",
+    "meeting_date": "2026-05-16",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00324",
+    "customer_id": "CUST-0080",
+    "meeting_date": "2026-07-27",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00325",
+    "customer_id": "CUST-0080",
+    "meeting_date": "2026-02-02",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00326",
+    "customer_id": "CUST-0080",
+    "meeting_date": "2026-03-14",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00327",
+    "customer_id": "CUST-0080",
+    "meeting_date": "2026-05-13",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00328",
+    "customer_id": "CUST-0081",
+    "meeting_date": "2026-07-12",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00329",
+    "customer_id": "CUST-0081",
+    "meeting_date": "2026-03-18",
+    "meeting_type": "Renewal Planning",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00330",
+    "customer_id": "CUST-0081",
+    "meeting_date": "2026-06-21",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00331",
+    "customer_id": "CUST-0081",
+    "meeting_date": "2026-07-27",
+    "meeting_type": "Technical Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00332",
+    "customer_id": "CUST-0082",
+    "meeting_date": "2026-03-16",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00333",
+    "customer_id": "CUST-0082",
+    "meeting_date": "2026-07-07",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00334",
+    "customer_id": "CUST-0082",
+    "meeting_date": "2026-06-17",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00335",
+    "customer_id": "CUST-0082",
+    "meeting_date": "2026-05-29",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 8,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00336",
+    "customer_id": "CUST-0082",
+    "meeting_date": "2026-03-31",
+    "meeting_type": "Renewal Planning",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00337",
+    "customer_id": "CUST-0082",
+    "meeting_date": "2026-06-09",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00338",
+    "customer_id": "CUST-0083",
+    "meeting_date": "2026-03-27",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00339",
+    "customer_id": "CUST-0083",
+    "meeting_date": "2026-02-22",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00340",
+    "customer_id": "CUST-0083",
+    "meeting_date": "2026-06-19",
+    "meeting_type": "Technical Review",
+    "attendees": 3,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00341",
+    "customer_id": "CUST-0084",
+    "meeting_date": "2026-05-28",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00342",
+    "customer_id": "CUST-0084",
+    "meeting_date": "2026-05-23",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "Usage has declined due to the customer's documented seasonal shutdown. Activity is expected to recover next quarter."
+  },
+  {
+    "note_id": "NOTE-00343",
+    "customer_id": "CUST-0084",
+    "meeting_date": "2026-02-20",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00344",
+    "customer_id": "CUST-0084",
+    "meeting_date": "2026-03-13",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00345",
+    "customer_id": "CUST-0084",
+    "meeting_date": "2026-07-06",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00346",
+    "customer_id": "CUST-0085",
+    "meeting_date": "2026-03-30",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00347",
+    "customer_id": "CUST-0085",
+    "meeting_date": "2026-05-30",
+    "meeting_type": "Onboarding",
+    "attendees": 6,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00348",
+    "customer_id": "CUST-0085",
+    "meeting_date": "2026-06-03",
+    "meeting_type": "Onboarding",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00349",
+    "customer_id": "CUST-0085",
+    "meeting_date": "2026-06-04",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00350",
+    "customer_id": "CUST-0085",
+    "meeting_date": "2026-02-12",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00351",
+    "customer_id": "CUST-0085",
+    "meeting_date": "2026-06-29",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00352",
+    "customer_id": "CUST-0086",
+    "meeting_date": "2026-07-18",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 3,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00353",
+    "customer_id": "CUST-0086",
+    "meeting_date": "2026-02-20",
+    "meeting_type": "Technical Review",
+    "attendees": 6,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00354",
+    "customer_id": "CUST-0087",
+    "meeting_date": "2026-05-16",
+    "meeting_type": "Onboarding",
+    "attendees": 5,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00355",
+    "customer_id": "CUST-0087",
+    "meeting_date": "2026-06-09",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00356",
+    "customer_id": "CUST-0087",
+    "meeting_date": "2026-05-19",
+    "meeting_type": "Renewal Planning",
+    "attendees": 7,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00357",
+    "customer_id": "CUST-0087",
+    "meeting_date": "2026-04-05",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00358",
+    "customer_id": "CUST-0087",
+    "meeting_date": "2026-07-20",
+    "meeting_type": "Onboarding",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00359",
+    "customer_id": "CUST-0088",
+    "meeting_date": "2026-07-30",
+    "meeting_type": "Technical Review",
+    "attendees": 5,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00360",
+    "customer_id": "CUST-0088",
+    "meeting_date": "2026-05-06",
+    "meeting_type": "Technical Review",
+    "attendees": 6,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00361",
+    "customer_id": "CUST-0088",
+    "meeting_date": "2026-05-10",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00362",
+    "customer_id": "CUST-0089",
+    "meeting_date": "2026-06-28",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00363",
+    "customer_id": "CUST-0089",
+    "meeting_date": "2026-04-24",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00364",
+    "customer_id": "CUST-0089",
+    "meeting_date": "2026-06-10",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 4,
+    "note_text": "The customer expressed frustration with recurring technical issues and requested a formal root-cause review."
+  },
+  {
+    "note_id": "NOTE-00365",
+    "customer_id": "CUST-0089",
+    "meeting_date": "2026-04-25",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00366",
+    "customer_id": "CUST-0090",
+    "meeting_date": "2026-07-11",
+    "meeting_type": "Onboarding",
+    "attendees": 8,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00367",
+    "customer_id": "CUST-0090",
+    "meeting_date": "2026-05-25",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 6,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00368",
+    "customer_id": "CUST-0090",
+    "meeting_date": "2026-07-06",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00369",
+    "customer_id": "CUST-0090",
+    "meeting_date": "2026-06-02",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00370",
+    "customer_id": "CUST-0090",
+    "meeting_date": "2026-05-20",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "The customer stated that they are evaluating a competing platform with stronger reporting capabilities."
+  },
+  {
+    "note_id": "NOTE-00371",
+    "customer_id": "CUST-0091",
+    "meeting_date": "2026-06-27",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00372",
+    "customer_id": "CUST-0091",
+    "meeting_date": "2026-06-05",
+    "meeting_type": "Onboarding",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00373",
+    "customer_id": "CUST-0091",
+    "meeting_date": "2026-07-03",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00374",
+    "customer_id": "CUST-0091",
+    "meeting_date": "2026-06-24",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00375",
+    "customer_id": "CUST-0091",
+    "meeting_date": "2026-06-27",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00376",
+    "customer_id": "CUST-0092",
+    "meeting_date": "2026-03-22",
+    "meeting_type": "Renewal Planning",
+    "attendees": 8,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00377",
+    "customer_id": "CUST-0092",
+    "meeting_date": "2026-06-10",
+    "meeting_type": "Onboarding",
+    "attendees": 5,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00378",
+    "customer_id": "CUST-0092",
+    "meeting_date": "2026-05-30",
+    "meeting_type": "Technical Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00379",
+    "customer_id": "CUST-0092",
+    "meeting_date": "2026-07-12",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00380",
+    "customer_id": "CUST-0092",
+    "meeting_date": "2026-06-29",
+    "meeting_type": "Renewal Planning",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00381",
+    "customer_id": "CUST-0092",
+    "meeting_date": "2026-05-09",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00382",
+    "customer_id": "CUST-0093",
+    "meeting_date": "2026-04-09",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00383",
+    "customer_id": "CUST-0093",
+    "meeting_date": "2026-02-03",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 7,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00384",
+    "customer_id": "CUST-0094",
+    "meeting_date": "2026-05-12",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "The customer shared that several teams have stopped using core workflows. Additional enablement may be required."
+  },
+  {
+    "note_id": "NOTE-00385",
+    "customer_id": "CUST-0094",
+    "meeting_date": "2026-03-16",
+    "meeting_type": "Onboarding",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00386",
+    "customer_id": "CUST-0094",
+    "meeting_date": "2026-05-14",
+    "meeting_type": "Technical Review",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00387",
+    "customer_id": "CUST-0094",
+    "meeting_date": "2026-05-13",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00388",
+    "customer_id": "CUST-0094",
+    "meeting_date": "2026-02-16",
+    "meeting_type": "Renewal Planning",
+    "attendees": 3,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00389",
+    "customer_id": "CUST-0094",
+    "meeting_date": "2026-04-11",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00390",
+    "customer_id": "CUST-0095",
+    "meeting_date": "2026-02-27",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 2,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00391",
+    "customer_id": "CUST-0095",
+    "meeting_date": "2026-06-23",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00392",
+    "customer_id": "CUST-0095",
+    "meeting_date": "2026-03-21",
+    "meeting_type": "Onboarding",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00393",
+    "customer_id": "CUST-0095",
+    "meeting_date": "2026-06-04",
+    "meeting_type": "Renewal Planning",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00394",
+    "customer_id": "CUST-0095",
+    "meeting_date": "2026-04-02",
+    "meeting_type": "Technical Review",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00395",
+    "customer_id": "CUST-0095",
+    "meeting_date": "2026-02-28",
+    "meeting_type": "Technical Review",
+    "attendees": 8,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00396",
+    "customer_id": "CUST-0096",
+    "meeting_date": "2026-02-04",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00397",
+    "customer_id": "CUST-0096",
+    "meeting_date": "2026-05-06",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00398",
+    "customer_id": "CUST-0096",
+    "meeting_date": "2026-03-27",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00399",
+    "customer_id": "CUST-0097",
+    "meeting_date": "2026-07-24",
+    "meeting_type": "Technical Review",
+    "attendees": 2,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00400",
+    "customer_id": "CUST-0097",
+    "meeting_date": "2026-07-02",
+    "meeting_type": "Renewal Planning",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00401",
+    "customer_id": "CUST-0097",
+    "meeting_date": "2026-07-16",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00402",
+    "customer_id": "CUST-0097",
+    "meeting_date": "2026-04-16",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 8,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00403",
+    "customer_id": "CUST-0097",
+    "meeting_date": "2026-06-25",
+    "meeting_type": "Technical Review",
+    "attendees": 6,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00404",
+    "customer_id": "CUST-0098",
+    "meeting_date": "2026-05-22",
+    "meeting_type": "Technical Review",
+    "attendees": 6,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00405",
+    "customer_id": "CUST-0098",
+    "meeting_date": "2026-02-14",
+    "meeting_type": "Technical Review",
+    "attendees": 7,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00406",
+    "customer_id": "CUST-0098",
+    "meeting_date": "2026-02-05",
+    "meeting_type": "Renewal Planning",
+    "attendees": 5,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00407",
+    "customer_id": "CUST-0098",
+    "meeting_date": "2026-03-14",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00408",
+    "customer_id": "CUST-0099",
+    "meeting_date": "2026-07-12",
+    "meeting_type": "Monthly Success Review",
+    "attendees": 5,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00409",
+    "customer_id": "CUST-0099",
+    "meeting_date": "2026-05-07",
+    "meeting_type": "Onboarding",
+    "attendees": 2,
+    "note_text": "The primary champion recently left the organization. A new business owner has not yet been confirmed."
+  },
+  {
+    "note_id": "NOTE-00410",
+    "customer_id": "CUST-0100",
+    "meeting_date": "2026-04-11",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 4,
+    "note_text": "The customer confirmed strong adoption and positive business outcomes. The executive sponsor supports expansion discussions."
+  },
+  {
+    "note_id": "NOTE-00411",
+    "customer_id": "CUST-0100",
+    "meeting_date": "2026-04-06",
+    "meeting_type": "Renewal Planning",
+    "attendees": 2,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  },
+  {
+    "note_id": "NOTE-00412",
+    "customer_id": "CUST-0100",
+    "meeting_date": "2026-05-12",
+    "meeting_type": "Quarterly Business Review",
+    "attendees": 5,
+    "note_text": "Reviewed current objectives, adoption progress, open actions, and next steps with the customer team."
+  }
+]
