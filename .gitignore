@@ -36,3 +36,6 @@ reports/
 
 # Runtime traces
 traces/
+
+# Local databases
+data/sqlite/
