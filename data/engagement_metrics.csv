@@ -1,0 +1,6 @@
+customer_id,days_since_exec_meeting,champion_left,missed_meetings_60d
+CUST-001,75,1,2
+CUST-002,48,0,1
+CUST-003,95,1,1
+CUST-004,35,0,0
+CUST-005,12,0,0

@@ -1,0 +1,6 @@
+customer_id,usage_change_pct,seat_utilization_pct,core_feature_adoption_pct
+CUST-001,-38,42,31
+CUST-002,-21,58,49
+CUST-003,-44,35,40
+CUST-004,-32,61,55
+CUST-005,12,83,78

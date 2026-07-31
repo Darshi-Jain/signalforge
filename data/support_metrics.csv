@@ -1,0 +1,6 @@
+customer_id,critical_tickets_30d,reopened_tickets_30d,avg_resolution_hours
+CUST-001,3,2,31
+CUST-002,1,1,20
+CUST-003,0,0,12
+CUST-004,0,1,14
+CUST-005,4,0,8

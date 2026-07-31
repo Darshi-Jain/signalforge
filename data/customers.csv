@@ -1,0 +1,6 @@
+customer_id,customer_name,arr,renewal_days,payment_delayed,requested_seat_reduction_pct,seasonal_decline
+CUST-001,Acme Analytics,180000,52,1,20,0
+CUST-002,Nova Health,240000,84,0,0,0
+CUST-003,FinCore Systems,60000,118,0,10,0
+CUST-004,Seasonal Retail Co,150000,68,0,0,1
+CUST-005,HappyCloud,95000,145,0,0,0
