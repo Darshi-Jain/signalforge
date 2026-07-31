@@ -27,3 +27,12 @@ service-account*.json
 .vscode/
 .idea/
 .DS_Store
+
+# Generated datasets
+data/generated/
+
+# Generated reports
+reports/
+
+# Runtime traces
+traces/
