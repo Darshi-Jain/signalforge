@@ -1,41 +1,36 @@
 # Python
-.venv/
 __pycache__/
 *.py[cod]
+*.pyo
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Virtual environment
+.venv/
+venv/
 
 # Environment variables
 .env
 .env.local
 .env.production
+!.env.example
 
-# Generated output
-logs/
-traces/
+# Generated data
+data/generated/
+data/sqlite/
 reports/
-*.log
+traces/
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
 
 # Credentials
 credentials*.json
 service-account*.json
 *.pem
 *.key
-
-# Editor and OS
-.vscode/
-.idea/
-.DS_Store
-
-# Generated datasets
-data/generated/
-
-# Generated reports
-reports/
-
-# Runtime traces
-traces/
-
-# Local databases
-data/sqlite/
