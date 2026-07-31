@@ -1,12 +1,29 @@
+# Python
 .venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables
 .env
-.env.*
-!.env.example
-.DS_Store
+.env.local
+.env.production
+
+# Generated output
 logs/
 traces/
+reports/
+*.log
+
+# Credentials
 credentials*.json
 service-account*.json
+*.pem
+*.key
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
