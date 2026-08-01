@@ -34,3 +34,6 @@ credentials*.json
 service-account*.json
 *.pem
 *.key
+
+# Python packaging
+*.egg-info/
