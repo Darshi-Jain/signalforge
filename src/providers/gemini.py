@@ -1,14 +1,35 @@
 from __future__ import annotations
 
 import os
+import subprocess
+from datetime import datetime, timedelta
 from typing import TypeVar
 
 from google import genai
 from google.genai import types
+from google.oauth2.credentials import Credentials
 from pydantic import BaseModel
 
 
 T = TypeVar("T", bound=BaseModel)
+
+
+def _get_gcloud_credentials() -> Credentials:
+    token = subprocess.check_output(
+        ["gcloud", "auth", "print-access-token"],
+        text=True,
+    ).strip()
+
+    if not token:
+        raise RuntimeError(
+            "Unable to obtain a gcloud access token. "
+            "Run `gcloud auth login` first."
+        )
+
+    return Credentials(
+        token=token,
+        expiry=datetime.utcnow() + timedelta(minutes=55),
+    )
 
 
 class GeminiProvider:
@@ -35,6 +56,7 @@ class GeminiProvider:
             vertexai=True,
             project=self.project_id,
             location=self.location,
+            credentials=_get_gcloud_credentials(),
         )
 
     def generate_structured(
@@ -55,8 +77,6 @@ class GeminiProvider:
         )
 
         if response.parsed is None:
-            raise RuntimeError(
-                "Gemini returned no structured response."
-            )
+            raise RuntimeError("Gemini returned no structured response.")
 
         return output_schema.model_validate(response.parsed)
