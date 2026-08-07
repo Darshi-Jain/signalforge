@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 
@@ -22,9 +24,20 @@ from src.tools import (
 
 st.set_page_config(
     page_title="SignalForge",
-    page_icon="📡",
+    page_icon="⚡",
     layout="wide",
 )
+
+
+def load_css() -> None:
+    css_path = Path("app/styles.css")
+    st.markdown(
+        f"<style>{css_path.read_text()}</style>",
+        unsafe_allow_html=True,
+    )
+
+
+load_css()
 
 
 RISK_LABELS = {
@@ -33,6 +46,16 @@ RISK_LABELS = {
     "high": "High",
     "critical": "Critical",
 }
+
+
+def risk_level(score: float) -> str:
+    if score >= 80:
+        return "critical"
+    if score >= 60:
+        return "high"
+    if score >= 35:
+        return "medium"
+    return "low"
 
 
 def calculate_overall_risk(customer_id: str) -> dict:
@@ -55,18 +78,9 @@ def calculate_overall_risk(customer_id: str) -> dict:
         for finding in findings
     )
 
-    if score >= 80:
-        level = "critical"
-    elif score >= 60:
-        level = "high"
-    elif score >= 35:
-        level = "medium"
-    else:
-        level = "low"
-
     return {
         "score": round(score, 1),
-        "level": level,
+        "level": risk_level(score),
         "findings": findings,
     }
 
@@ -103,9 +117,35 @@ def load_portfolio() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def metric_card(label: str, value: str, foot: str) -> None:
+    st.markdown(
+        f"""
+        <div class="metric-card">
+            <div class="metric-label">{label}</div>
+            <div class="metric-value">{value}</div>
+            <div class="metric-foot">{foot}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_brand() -> None:
+    st.markdown(
+        """
+        <div class="sf-brand">
+            <h1>SignalForge ⚡</h1>
+        </div>
+        <div class="sf-subtitle">
+            Agentic Customer Intelligence Platform
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 def render_portfolio() -> None:
-    st.title("SignalForge")
-    st.caption("Agentic Customer Intelligence Platform")
+    render_brand()
 
     portfolio = load_portfolio()
 
@@ -113,44 +153,108 @@ def render_portfolio() -> None:
     high_risk = len(
         portfolio[portfolio["Risk"].isin(["High", "Critical"])]
     )
-    renewals_90 = len(portfolio[portfolio["Renewal Days"] <= 90])
+    renewals_90 = len(
+        portfolio[portfolio["Renewal Days"] <= 90]
+    )
     arr_at_risk = portfolio.loc[
         portfolio["Risk"].isin(["High", "Critical"]),
         "ARR",
     ].sum()
 
-    metric_columns = st.columns(4)
+    c1, c2, c3, c4 = st.columns(4)
 
-    metric_columns[0].metric(
-        "Customers",
-        f"{total_customers:,}",
-    )
-    metric_columns[1].metric(
-        "High-Risk Accounts",
-        f"{high_risk:,}",
-    )
-    metric_columns[2].metric(
-        "Renewals Within 90 Days",
-        f"{renewals_90:,}",
-    )
-    metric_columns[3].metric(
-        "ARR at Risk",
-        f"${arr_at_risk:,.0f}",
+    with c1:
+        metric_card(
+            "Total Customers",
+            f"{total_customers:,}",
+            "Active portfolio",
+        )
+
+    with c2:
+        metric_card(
+            "High-Risk Accounts",
+            f"{high_risk:,}",
+            "Requires proactive attention",
+        )
+
+    with c3:
+        metric_card(
+            "Renewals (90 Days)",
+            f"{renewals_90:,}",
+            "Upcoming renewal window",
+        )
+
+    with c4:
+        metric_card(
+            "ARR at Risk",
+            f"${arr_at_risk:,.0f}",
+            "Revenue exposed to churn risk",
+        )
+
+    st.markdown(
+        """
+        <div class="portfolio-card">
+            <div class="section-title">Customer Portfolio</div>
+            <div class="section-subtitle">
+                Monitor customer health and risk across your portfolio
+            </div>
+        """,
+        unsafe_allow_html=True,
     )
 
-    st.subheader("Customer Portfolio")
+    search_col, filter_col, sort_col = st.columns([2, 2, 1.5])
 
-    risk_filter = st.multiselect(
-        "Filter by risk",
-        options=["Low", "Medium", "High", "Critical"],
-        default=["Low", "Medium", "High", "Critical"],
-    )
+    with search_col:
+        search = st.text_input(
+            "Search customers",
+            placeholder="Search by customer name",
+        )
 
-    filtered = portfolio[portfolio["Risk"].isin(risk_filter)].copy()
-    filtered = filtered.sort_values(
-        ["Risk Score", "ARR"],
-        ascending=[False, False],
-    )
+    with filter_col:
+        selected_risks = st.multiselect(
+            "Filter by risk",
+            options=["Low", "Medium", "High", "Critical"],
+            default=["Low", "Medium", "High", "Critical"],
+        )
+
+    with sort_col:
+        sort_option = st.selectbox(
+            "Sort by",
+            options=[
+                "Risk Score: High to Low",
+                "ARR: High to Low",
+                "Renewal: Soonest",
+            ],
+        )
+
+    filtered = portfolio[
+        portfolio["Risk"].isin(selected_risks)
+    ].copy()
+
+    if search:
+        filtered = filtered[
+            filtered["Customer"].str.contains(
+                search,
+                case=False,
+                na=False,
+            )
+        ]
+
+    if sort_option == "Risk Score: High to Low":
+        filtered = filtered.sort_values(
+            ["Risk Score", "ARR"],
+            ascending=[False, False],
+        )
+    elif sort_option == "ARR: High to Low":
+        filtered = filtered.sort_values(
+            "ARR",
+            ascending=False,
+        )
+    else:
+        filtered = filtered.sort_values(
+            "Renewal Days",
+            ascending=True,
+        )
 
     st.dataframe(
         filtered[
@@ -184,15 +288,24 @@ def render_portfolio() -> None:
         },
     )
 
+    st.markdown("</div>", unsafe_allow_html=True)
 
-def render_customer_investigation() -> None:
-    st.title("Customer Investigation")
-    st.caption(
-        "Review deterministic risk signals and AI-generated "
-        "Voice of Customer insights."
+    st.markdown(
+        """
+        <div class="ai-banner">
+            ✨ Tip: Open the Investigation page to run a full
+            AI-powered customer analysis with evidence and recommendations.
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
 
+
+def render_investigation() -> None:
+    render_brand()
+
     customers = CustomerRepository().list_customers(limit=500)
+
     customer_options = {
         f"{customer['customer_name']} ({customer['customer_id']})":
             customer["customer_id"]
@@ -211,36 +324,58 @@ def render_customer_investigation() -> None:
     contract = get_contract_risk(customer_id)
     risk = calculate_overall_risk(customer_id)
 
-    st.subheader(profile.customer_name)
-    st.caption(
-        f"{profile.segment} · {profile.industry} · "
-        f"Owner: {profile.account_owner}"
+    st.markdown(
+        f"""
+        <div class="portfolio-card">
+            <div class="section-title">{profile.customer_name}</div>
+            <div class="section-subtitle">
+                {profile.segment} · {profile.industry} ·
+                Owner: {profile.account_owner}
+            </div>
+        """,
+        unsafe_allow_html=True,
     )
 
-    metrics = st.columns(5)
-    metrics[0].metric(
-        "Overall Risk",
-        RISK_LABELS[risk["level"]],
-    )
-    metrics[1].metric(
-        "Risk Score",
-        f"{risk['score']:.1f}/100",
-    )
-    metrics[2].metric(
-        "ARR",
-        f"${profile.arr:,.0f}",
-    )
-    metrics[3].metric(
-        "Renewal",
-        f"{contract.renewal_days} days",
-    )
-    metrics[4].metric(
-        "Seat Utilization",
-        f"{usage.latest_seat_utilization:.0%}",
-    )
+    c1, c2, c3, c4, c5 = st.columns(5)
 
-    st.divider()
-    st.subheader("Specialist Risk Analysis")
+    with c1:
+        metric_card(
+            "Overall Risk",
+            RISK_LABELS[risk["level"]],
+            f"{risk['score']:.1f}/100",
+        )
+
+    with c2:
+        metric_card(
+            "ARR",
+            f"${profile.arr:,.0f}",
+            "Annual recurring revenue",
+        )
+
+    with c3:
+        metric_card(
+            "Renewal",
+            f"{contract.renewal_days} days",
+            contract.urgency.title(),
+        )
+
+    with c4:
+        metric_card(
+            "Seat Utilization",
+            f"{usage.latest_seat_utilization:.0%}",
+            usage.trend_direction.title(),
+        )
+
+    with c5:
+        metric_card(
+            "Support Tickets",
+            f"{support.total_tickets}",
+            f"{support.critical_tickets} critical",
+        )
+
+    st.markdown("</div>", unsafe_allow_html=True)
+
+    st.markdown("### Specialist Analysis")
 
     for finding in risk["findings"]:
         with st.expander(
@@ -255,7 +390,6 @@ def render_customer_investigation() -> None:
                     "Signal": item.signal.replace("_", " ").title(),
                     "Value": item.value,
                     "Explanation": item.explanation,
-                    "Source": item.source,
                 }
                 for item in finding.evidence
             ]
@@ -266,24 +400,20 @@ def render_customer_investigation() -> None:
                 hide_index=True,
             )
 
-            if finding.contradictory_signals:
-                st.markdown("**Positive or contradictory signals**")
-                for signal in finding.contradictory_signals:
-                    st.write(f"• {signal}")
+    st.markdown("### AI Voice of Customer")
 
-    st.divider()
-    st.subheader("Voice of Customer")
-
-    st.info(
-        "Gemini runs only when you click the button below, "
-        "which helps control AI usage and cost."
+    st.caption(
+        "Gemini runs only when requested to keep AI usage controlled."
     )
 
     if st.button(
-        "Run AI Voice of Customer Analysis",
+        "Run AI Investigation",
         type="primary",
+        use_container_width=False,
     ):
-        with st.spinner("Analyzing customer meeting notes..."):
+        with st.spinner(
+            "Gemini is analyzing customer meeting notes..."
+        ):
             try:
                 result = VoiceOfCustomerAgent().analyze(customer_id)
                 st.session_state["voice_result"] = result.model_dump()
@@ -295,36 +425,30 @@ def render_customer_investigation() -> None:
     result_customer = st.session_state.get("voice_customer")
 
     if result and result_customer == customer_id:
-        summary_columns = st.columns(3)
-        summary_columns[0].metric(
-            "Sentiment",
-            result["sentiment"].title(),
+        st.markdown(
+            '<div class="investigation-card">',
+            unsafe_allow_html=True,
         )
-        summary_columns[1].metric(
-            "Voice Risk",
-            result["risk_level"].title(),
-        )
-        summary_columns[2].metric(
-            "Confidence",
-            f"{result['confidence']:.0%}",
-        )
+
+        v1, v2, v3 = st.columns(3)
+        v1.metric("Sentiment", result["sentiment"].title())
+        v2.metric("Voice Risk", result["risk_level"].title())
+        v3.metric("Confidence", f"{result['confidence']:.0%}")
 
         st.write(result["summary"])
 
-        indicators = {
+        st.markdown("**Detected signals**")
+
+        signal_map = {
             "Competitor mentioned": result["competitor_mentioned"],
             "Pricing objection": result["pricing_objection"],
-            "Product gap detected": result["product_gap_detected"],
-            "Churn language detected": result[
-                "churn_language_detected"
-            ],
+            "Product gap": result["product_gap_detected"],
+            "Churn language": result["churn_language_detected"],
         }
 
-        st.markdown("**Detected signals**")
-        for label, detected in indicators.items():
-            marker = "⚠️" if detected else "✅"
-            status = "Yes" if detected else "No"
-            st.write(f"{marker} {label}: {status}")
+        for label, detected in signal_map.items():
+            icon = "⚠️" if detected else "✓"
+            st.write(f"{icon} {label}: {'Yes' if detected else 'No'}")
 
         if result["evidence"]:
             st.markdown("**Supporting evidence**")
@@ -334,8 +458,9 @@ def render_customer_investigation() -> None:
                     st.write(evidence["evidence_text"])
                     st.caption(evidence["explanation"])
 
-    st.divider()
-    st.subheader("Recent Meeting Notes")
+        st.markdown("</div>", unsafe_allow_html=True)
+
+    st.markdown("### Recent Meeting Notes")
 
     meeting_notes = get_recent_meeting_notes(
         customer_id=customer_id,
@@ -350,24 +475,27 @@ def render_customer_investigation() -> None:
 
 
 def main() -> None:
-    page = st.sidebar.radio(
-        "Navigation",
-        options=[
-            "Portfolio Overview",
-            "Customer Investigation",
-        ],
-    )
+    with st.sidebar:
+        st.markdown("## ⚡ SignalForge")
+        st.caption("Customer Intelligence")
 
-    st.sidebar.markdown("---")
-    st.sidebar.caption(
-        "SignalForge combines deterministic customer analytics "
-        "with Gemini-powered language interpretation."
-    )
+        page = st.radio(
+            "Navigation",
+            options=[
+                "Portfolio",
+                "Investigation",
+            ],
+            label_visibility="collapsed",
+        )
 
-    if page == "Portfolio Overview":
+        st.markdown("---")
+        st.caption("AI Agents")
+        st.success("5 / 5 systems active")
+
+    if page == "Portfolio":
         render_portfolio()
     else:
-        render_customer_investigation()
+        render_investigation()
 
 
 if __name__ == "__main__":
