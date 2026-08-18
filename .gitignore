@@ -37,3 +37,16 @@ service-account*.json
 
 # Python packaging
 *.egg-info/
+
+# Local secrets / credentials
+.env
+.env.*
+*.key
+*credentials*.json
+*service-account*.json
+.streamlit/secrets.toml
+
+# Python
+.venv/
+__pycache__/
+*.pyc

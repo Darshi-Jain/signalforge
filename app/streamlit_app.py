@@ -1,18 +1,13 @@
 from __future__ import annotations
 
+import html
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
 
-from src.agents import (
-    CommercialRiskAgent,
-    ProductAdoptionAgent,
-    RelationshipIntelligenceAgent,
-    SupportIntelligenceAgent,
-    VoiceOfCustomerAgent,
-)
 from src.repositories import ContractRepository, CustomerRepository
+from src.services import calculate_customer_risk
 from src.tools import (
     get_contract_risk,
     get_customer_profile,
@@ -20,6 +15,7 @@ from src.tools import (
     get_support_summary,
     get_usage_trend,
 )
+from src.workflows import investigate_customer
 
 
 st.set_page_config(
@@ -30,9 +26,9 @@ st.set_page_config(
 
 
 def load_css() -> None:
-    css_path = Path("app/styles.css")
+    css = Path("app/styles.css").read_text()
     st.markdown(
-        f"<style>{css_path.read_text()}</style>",
+        f"<style>{css}</style>",
         unsafe_allow_html=True,
     )
 
@@ -47,42 +43,12 @@ RISK_LABELS = {
     "critical": "Critical",
 }
 
-
-def risk_level(score: float) -> str:
-    if score >= 80:
-        return "critical"
-    if score >= 60:
-        return "high"
-    if score >= 35:
-        return "medium"
-    return "low"
-
-
-def calculate_overall_risk(customer_id: str) -> dict:
-    findings = [
-        ProductAdoptionAgent().analyze(customer_id),
-        SupportIntelligenceAgent().analyze(customer_id),
-        RelationshipIntelligenceAgent().analyze(customer_id),
-        CommercialRiskAgent().analyze(customer_id),
-    ]
-
-    weights = {
-        "product_adoption": 0.30,
-        "support_intelligence": 0.25,
-        "relationship_intelligence": 0.25,
-        "commercial_risk": 0.20,
-    }
-
-    score = sum(
-        finding.risk_score * weights[finding.agent_name]
-        for finding in findings
-    )
-
-    return {
-        "score": round(score, 1),
-        "level": risk_level(score),
-        "findings": findings,
-    }
+RISK_COLORS = {
+    "Low": "#16a34a",
+    "Medium": "#f59e0b",
+    "High": "#f97316",
+    "Critical": "#dc2626",
+}
 
 
 @st.cache_data
@@ -98,8 +64,8 @@ def load_portfolio() -> pd.DataFrame:
     rows = []
 
     for customer in customers:
+        risk = calculate_customer_risk(customer["customer_id"])
         contract = contract_map.get(customer["customer_id"], {})
-        risk = calculate_overall_risk(customer["customer_id"])
 
         rows.append(
             {
@@ -109,20 +75,33 @@ def load_portfolio() -> pd.DataFrame:
                 "Industry": customer["industry"],
                 "ARR": float(customer["arr"]),
                 "Risk": RISK_LABELS[risk["level"]],
-                "Risk Score": risk["score"],
-                "Renewal Days": int(contract.get("renewal_days", 0)),
+                "Risk Score": float(risk["score"]),
+                "Renewal Days": int(
+                    contract.get("renewal_days", 0)
+                ),
             }
         )
 
     return pd.DataFrame(rows)
 
 
-def metric_card(label: str, value: str, foot: str) -> None:
+def metric_card(
+    icon: str,
+    icon_class: str,
+    label: str,
+    value: str,
+    foot: str,
+) -> None:
     st.markdown(
         f"""
         <div class="metric-card">
-            <div class="metric-label">{label}</div>
-            <div class="metric-value">{value}</div>
+            <div class="metric-top">
+                <div class="metric-icon {icon_class}">{icon}</div>
+                <div>
+                    <div class="metric-label">{label}</div>
+                    <div class="metric-value">{value}</div>
+                </div>
+            </div>
             <div class="metric-foot">{foot}</div>
         </div>
         """,
@@ -134,37 +113,97 @@ def render_brand() -> None:
     st.markdown(
         """
         <div class="sf-brand">
-            <h1>SignalForge ⚡</h1>
-        </div>
-        <div class="sf-subtitle">
-            Agentic Customer Intelligence Platform
+            <h1>SignalForge <span>⚡</span></h1>
+            <div class="sf-subtitle">
+                Agentic Customer Intelligence Platform
+            </div>
         </div>
         """,
         unsafe_allow_html=True,
     )
 
 
+def risk_badge(risk: str) -> str:
+    css_class = risk.lower()
+    return (
+        f'<span class="risk-pill risk-{css_class}">'
+        f'{html.escape(risk)}</span>'
+    )
+
+
+def portfolio_table(data: pd.DataFrame) -> str:
+    rows = []
+
+    for _, item in data.iterrows():
+        score = float(item["Risk Score"])
+        risk = item["Risk"]
+        color = RISK_COLORS[risk]
+        customer = html.escape(str(item["Customer"]))
+        segment = html.escape(str(item["Segment"]))
+        industry = html.escape(str(item["Industry"]))
+        initials = html.escape(str(item["Customer"])[-2:])
+
+        row = (
+            "<tr>"
+            f'<td class="customer-cell">'
+            f'<div class="customer-avatar">{initials}</div>'
+            f"{customer}</td>"
+            f"<td>{segment}</td>"
+            f"<td>{industry}</td>"
+            f'<td>${float(item["ARR"]):,.0f}</td>'
+            f"<td>{risk_badge(risk)}</td>"
+            '<td><div class="risk-score-wrap">'
+            '<div class="risk-track">'
+            f'<div class="risk-fill" style="width:{score}%;background:{color};"></div>'
+            "</div>"
+            f"<span>{score:.1f}</span>"
+            "</div></td>"
+            f'<td>📅 {int(item["Renewal Days"])} days</td>'
+            "</tr>"
+        )
+
+        rows.append(row)
+
+    return (
+        '<div class="table-shell">'
+        '<table class="sf-table">'
+        "<thead><tr>"
+        "<th>Customer</th>"
+        "<th>Segment</th>"
+        "<th>Industry</th>"
+        "<th>ARR</th>"
+        "<th>Risk</th>"
+        "<th>Risk Score</th>"
+        "<th>Renewal</th>"
+        "</tr></thead>"
+        f"<tbody>{''.join(rows)}</tbody>"
+        "</table>"
+        "</div>"
+    )
+
 def render_portfolio() -> None:
     render_brand()
-
     portfolio = load_portfolio()
 
+    high_mask = portfolio["Risk"].isin(
+        ["High", "Critical"]
+    )
+
     total_customers = len(portfolio)
-    high_risk = len(
-        portfolio[portfolio["Risk"].isin(["High", "Critical"])]
+    high_risk = int(high_mask.sum())
+    renewals_90 = int(
+        (portfolio["Renewal Days"] <= 90).sum()
     )
-    renewals_90 = len(
-        portfolio[portfolio["Renewal Days"] <= 90]
+    arr_at_risk = float(
+        portfolio.loc[high_mask, "ARR"].sum()
     )
-    arr_at_risk = portfolio.loc[
-        portfolio["Risk"].isin(["High", "Critical"]),
-        "ARR",
-    ].sum()
 
     c1, c2, c3, c4 = st.columns(4)
 
     with c1:
         metric_card(
+            "👥",
+            "icon-blue",
             "Total Customers",
             f"{total_customers:,}",
             "Active portfolio",
@@ -172,6 +211,8 @@ def render_portfolio() -> None:
 
     with c2:
         metric_card(
+            "🛡",
+            "icon-red",
             "High-Risk Accounts",
             f"{high_risk:,}",
             "Requires proactive attention",
@@ -179,6 +220,8 @@ def render_portfolio() -> None:
 
     with c3:
         metric_card(
+            "📅",
+            "icon-purple",
             "Renewals (90 Days)",
             f"{renewals_90:,}",
             "Upcoming renewal window",
@@ -186,6 +229,8 @@ def render_portfolio() -> None:
 
     with c4:
         metric_card(
+            "$",
+            "icon-green",
             "ARR at Risk",
             f"${arr_at_risk:,.0f}",
             "Revenue exposed to churn risk",
@@ -193,16 +238,19 @@ def render_portfolio() -> None:
 
     st.markdown(
         """
-        <div class="portfolio-card">
+        <div class="portfolio-heading">
             <div class="section-title">Customer Portfolio</div>
             <div class="section-subtitle">
-                Monitor customer health and risk across your portfolio
+                Monitor customer health and prioritize accounts
             </div>
+        </div>
         """,
         unsafe_allow_html=True,
     )
 
-    search_col, filter_col, sort_col = st.columns([2, 2, 1.5])
+    search_col, risk_col, sort_col = st.columns(
+        [1.5, 1.6, 1.2]
+    )
 
     with search_col:
         search = st.text_input(
@@ -210,17 +258,17 @@ def render_portfolio() -> None:
             placeholder="Search by customer name",
         )
 
-    with filter_col:
+    with risk_col:
         selected_risks = st.multiselect(
             "Filter by risk",
-            options=["Low", "Medium", "High", "Critical"],
+            ["Low", "Medium", "High", "Critical"],
             default=["Low", "Medium", "High", "Critical"],
         )
 
     with sort_col:
         sort_option = st.selectbox(
             "Sort by",
-            options=[
+            [
                 "Risk Score: High to Low",
                 "ARR: High to Low",
                 "Renewal: Soonest",
@@ -256,45 +304,73 @@ def render_portfolio() -> None:
             ascending=True,
         )
 
-    st.dataframe(
-        filtered[
-            [
-                "Customer",
-                "Segment",
-                "Industry",
-                "ARR",
-                "Risk",
-                "Risk Score",
-                "Renewal Days",
-            ]
-        ],
-        use_container_width=True,
-        hide_index=True,
-        column_config={
-            "ARR": st.column_config.NumberColumn(
-                "ARR",
-                format="$%.0f",
-            ),
-            "Risk Score": st.column_config.ProgressColumn(
-                "Risk Score",
-                min_value=0,
-                max_value=100,
-                format="%.1f",
-            ),
-            "Renewal Days": st.column_config.NumberColumn(
-                "Renewal",
-                format="%d days",
-            ),
-        },
+    page_size = 10
+    page_count = max(
+        1,
+        (len(filtered) + page_size - 1) // page_size,
     )
 
-    st.markdown("</div>", unsafe_allow_html=True)
+    page = st.number_input(
+        "Page",
+        min_value=1,
+        max_value=page_count,
+        value=1,
+        step=1,
+        label_visibility="collapsed",
+    )
+
+    start = (int(page) - 1) * page_size
+    end = start + page_size
+    displayed = filtered.iloc[start:end]
+
+    st.markdown(
+        portfolio_table(displayed),
+        unsafe_allow_html=True,
+    )
+
+    footer_left, footer_right = st.columns([3, 1])
+
+    with footer_left:
+        st.caption(
+            f"Showing {start + 1 if len(filtered) else 0} "
+            f"to {min(end, len(filtered))} "
+            f"of {len(filtered)} customers"
+        )
+
+    with footer_right:
+        st.caption(
+            f"Page {int(page)} of {page_count}"
+        )
 
     st.markdown(
         """
         <div class="ai-banner">
-            ✨ Tip: Open the Investigation page to run a full
-            AI-powered customer analysis with evidence and recommendations.
+            ✨ <strong>Tip:</strong> Open Investigation to run a
+            full AI-powered account analysis with evidence and
+            recommended next actions.
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def risk_bar(title: str, finding: dict) -> None:
+    risk = finding["risk_level"].title()
+    score = float(finding["risk_score"])
+    color = RISK_COLORS[RISK_LABELS[finding["risk_level"]]]
+
+    st.markdown(
+        f"""
+        <div class="risk-analysis-row">
+            <div class="risk-analysis-name">{html.escape(title)}</div>
+            <div class="risk-analysis-track">
+                <div
+                    class="risk-analysis-fill"
+                    style="width:{score}%;background:{color};"
+                ></div>
+            </div>
+            <div class="risk-analysis-score">{score:.0f}</div>
+            <div>{risk_badge(risk)}</div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -306,191 +382,268 @@ def render_investigation() -> None:
 
     customers = CustomerRepository().list_customers(limit=500)
 
-    customer_options = {
-        f"{customer['customer_name']} ({customer['customer_id']})":
-            customer["customer_id"]
-        for customer in customers
+    options = {
+        f"{c['customer_name']} ({c['customer_id']})":
+            c["customer_id"]
+        for c in customers
     }
 
-    selected_label = st.selectbox(
-        "Select a customer",
-        options=list(customer_options.keys()),
+    selected = st.selectbox(
+        "Select customer",
+        list(options.keys()),
     )
-    customer_id = customer_options[selected_label]
+    customer_id = options[selected]
 
     profile = get_customer_profile(customer_id)
     usage = get_usage_trend(customer_id)
     support = get_support_summary(customer_id)
     contract = get_contract_risk(customer_id)
-    risk = calculate_overall_risk(customer_id)
+    risk = calculate_customer_risk(customer_id)
 
-    st.markdown(
-        f"""
-        <div class="portfolio-card">
-            <div class="section-title">{profile.customer_name}</div>
-            <div class="section-subtitle">
-                {profile.segment} · {profile.industry} ·
-                Owner: {profile.account_owner}
+    top_left, top_right = st.columns([3, 1])
+
+    with top_left:
+        st.markdown(
+            f"""
+            <div class="customer-title">
+                {html.escape(profile.customer_name)}
             </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    c1, c2, c3, c4, c5 = st.columns(5)
-
-    with c1:
-        metric_card(
-            "Overall Risk",
-            RISK_LABELS[risk["level"]],
-            f"{risk['score']:.1f}/100",
+            <div class="customer-meta">
+                {html.escape(profile.industry)} ·
+                {html.escape(profile.segment)} ·
+                Owner: {html.escape(profile.account_owner)}
+            </div>
+            """,
+            unsafe_allow_html=True,
         )
 
-    with c2:
+    with top_right:
+        st.markdown(
+            f"""
+            <div class="hero-risk">
+                {risk_badge(RISK_LABELS[risk["level"]])}
+                <strong>{risk["score"]:.1f} / 100</strong>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    m1, m2, m3, m4 = st.columns(4)
+
+    with m1:
         metric_card(
+            "$",
+            "icon-green",
             "ARR",
             f"${profile.arr:,.0f}",
             "Annual recurring revenue",
         )
 
-    with c3:
+    with m2:
         metric_card(
+            "📅",
+            "icon-purple",
             "Renewal",
             f"{contract.renewal_days} days",
             contract.urgency.title(),
         )
 
-    with c4:
+    with m3:
         metric_card(
+            "📈",
+            "icon-blue",
             "Seat Utilization",
             f"{usage.latest_seat_utilization:.0%}",
             usage.trend_direction.title(),
         )
 
-    with c5:
+    with m4:
         metric_card(
-            "Support Tickets",
-            f"{support.total_tickets}",
+            "🎫",
+            "icon-red",
+            "Support",
+            str(support.total_tickets),
             f"{support.critical_tickets} critical",
         )
 
-    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("### Why this customer needs attention")
 
-    st.markdown("### Specialist Analysis")
+    names = {
+        "product_adoption": "Product Adoption",
+        "support_intelligence": "Support",
+        "relationship_intelligence": "Relationship",
+        "commercial_risk": "Commercial",
+    }
 
     for finding in risk["findings"]:
-        with st.expander(
-            f"{finding.agent_name.replace('_', ' ').title()} "
-            f"— {finding.risk_level.upper()} "
-            f"({finding.risk_score:.1f})"
-        ):
-            st.write(finding.summary)
+        risk_bar(
+            names[finding.agent_name],
+            finding.model_dump(),
+        )
 
-            evidence_rows = [
-                {
-                    "Signal": item.signal.replace("_", " ").title(),
-                    "Value": item.value,
-                    "Explanation": item.explanation,
-                }
-                for item in finding.evidence
-            ]
-
-            st.dataframe(
-                pd.DataFrame(evidence_rows),
-                use_container_width=True,
-                hide_index=True,
-            )
-
-    st.markdown("### AI Voice of Customer")
+    st.markdown("### ✨ AI Customer Investigation")
 
     st.caption(
-        "Gemini runs only when requested to keep AI usage controlled."
+        "Gemini analyzes the customer's meeting notes and "
+        "combines them with SignalForge's account-risk agents."
     )
 
     if st.button(
-        "Run AI Investigation",
+        "Run Full AI Investigation",
         type="primary",
-        use_container_width=False,
     ):
         with st.spinner(
-            "Gemini is analyzing customer meeting notes..."
+            "Running SignalForge agents and Gemini analysis..."
         ):
             try:
-                result = VoiceOfCustomerAgent().analyze(customer_id)
-                st.session_state["voice_result"] = result.model_dump()
-                st.session_state["voice_customer"] = customer_id
+                result = investigate_customer(customer_id)
+                st.session_state["investigation"] = result
+                st.session_state["investigation_customer"] = (
+                    customer_id
+                )
             except Exception as error:
-                st.error(f"AI analysis failed: {error}")
+                st.error(f"Investigation failed: {error}")
 
-    result = st.session_state.get("voice_result")
-    result_customer = st.session_state.get("voice_customer")
+    result = st.session_state.get("investigation")
 
-    if result and result_customer == customer_id:
+    if (
+        result
+        and st.session_state.get(
+            "investigation_customer"
+        ) == customer_id
+    ):
+        voice = result["voice_of_customer"]
+
+        v1, v2, v3 = st.columns(3)
+        v1.metric(
+            "Sentiment",
+            voice["sentiment"].title(),
+        )
+        v2.metric(
+            "AI Risk",
+            voice["risk_level"].title(),
+        )
+        v3.metric(
+            "Confidence",
+            f"{voice['confidence']:.0%}",
+        )
+
         st.markdown(
-            '<div class="investigation-card">',
+            f"""
+            <div class="ai-summary-card">
+                <div class="finding-title">
+                    Voice of Customer Summary
+                </div>
+                <div class="finding-summary">
+                    {html.escape(voice["summary"])}
+                </div>
+            </div>
+            """,
             unsafe_allow_html=True,
         )
 
-        v1, v2, v3 = st.columns(3)
-        v1.metric("Sentiment", result["sentiment"].title())
-        v2.metric("Voice Risk", result["risk_level"].title())
-        v3.metric("Confidence", f"{result['confidence']:.0%}")
-
-        st.write(result["summary"])
-
-        st.markdown("**Detected signals**")
-
-        signal_map = {
-            "Competitor mentioned": result["competitor_mentioned"],
-            "Pricing objection": result["pricing_objection"],
-            "Product gap": result["product_gap_detected"],
-            "Churn language": result["churn_language_detected"],
+        signals = {
+            "Competitor mentioned":
+                voice["competitor_mentioned"],
+            "Pricing objection":
+                voice["pricing_objection"],
+            "Product gap detected":
+                voice["product_gap_detected"],
+            "Churn language detected":
+                voice["churn_language_detected"],
         }
 
-        for label, detected in signal_map.items():
-            icon = "⚠️" if detected else "✓"
-            st.write(f"{icon} {label}: {'Yes' if detected else 'No'}")
+        st.markdown("#### Signals detected")
 
-        if result["evidence"]:
-            st.markdown("**Supporting evidence**")
+        signal_columns = st.columns(4)
 
-            for evidence in result["evidence"]:
-                with st.expander(evidence["source_id"]):
-                    st.write(evidence["evidence_text"])
-                    st.caption(evidence["explanation"])
+        for column, (label, detected) in zip(
+            signal_columns,
+            signals.items(),
+        ):
+            with column:
+                if detected:
+                    st.warning(f"⚠ {label}")
+                else:
+                    st.success(f"✓ {label}")
 
-        st.markdown("</div>", unsafe_allow_html=True)
+        st.markdown("#### Evidence")
 
-    st.markdown("### Recent Meeting Notes")
+        for evidence in voice["evidence"]:
+            with st.expander(evidence["source_id"]):
+                st.write(evidence["evidence_text"])
+                st.caption(evidence["explanation"])
 
-    meeting_notes = get_recent_meeting_notes(
-        customer_id=customer_id,
+        st.markdown("### Recommended next actions")
+
+        for index, action in enumerate(
+            result["recommended_actions"],
+            start=1,
+        ):
+            st.markdown(
+                f"""
+                <div class="action-card">
+                    <div class="action-number">{index}</div>
+                    <div>{html.escape(action)}</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+    st.markdown("### Recent meeting notes")
+
+    for note in get_recent_meeting_notes(
+        customer_id,
         limit=5,
-    )
-
-    for note in meeting_notes:
+    ):
         with st.expander(
             f"{note.meeting_date} · {note.meeting_type}"
         ):
             st.write(note.note_text)
 
 
-def main() -> None:
+def sidebar() -> str:
     with st.sidebar:
-        st.markdown("## ⚡ SignalForge")
-        st.caption("Customer Intelligence")
+        st.markdown(
+            """
+            <div class="sidebar-brand">
+                ⚡ SignalForge
+            </div>
+            <div class="sidebar-subtitle">
+                Customer Intelligence
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
         page = st.radio(
             "Navigation",
-            options=[
-                "Portfolio",
-                "Investigation",
-            ],
+            ["Portfolio", "Investigation"],
             label_visibility="collapsed",
         )
 
-        st.markdown("---")
+        st.markdown(
+            '<div class="sidebar-divider"></div>',
+            unsafe_allow_html=True,
+        )
+
         st.caption("AI Agents")
-        st.success("5 / 5 systems active")
+
+        st.markdown(
+            """
+            <div class="agent-status">
+                <span class="status-dot"></span>
+                5 / 5 systems active
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    return page
+
+
+def main() -> None:
+    page = sidebar()
 
     if page == "Portfolio":
         render_portfolio()
