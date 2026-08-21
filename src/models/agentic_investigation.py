@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Literal
+
 from pydantic import BaseModel, Field
 
 
@@ -20,7 +22,7 @@ class RecommendedAction(BaseModel):
 class AgenticInvestigation(BaseModel):
     customer_id: str
 
-    overall_risk: str
+    overall_risk: Literal["Low", "Medium", "High"]
     overall_risk_score: float = Field(ge=0, le=100)
     confidence: float = Field(ge=0, le=1)
 

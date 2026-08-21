@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import html
 from pathlib import Path
 
@@ -15,7 +16,9 @@ from src.tools import (
     get_support_summary,
     get_usage_trend,
 )
-from src.workflows import investigate_customer
+from src.agents.agentic_supervisor import (
+    investigate_customer_agentically,
+)
 
 
 st.set_page_config(
@@ -481,116 +484,260 @@ def render_investigation() -> None:
             finding.model_dump(),
         )
 
-    st.markdown("### ✨ AI Customer Investigation")
+    st.markdown("### ✨ Agentic AI Investigation")
 
     st.caption(
-        "Gemini analyzes the customer's meeting notes and "
-        "combines them with SignalForge's account-risk agents."
+        "The SignalForge Supervisor uses risk triage, selects specialist "
+        "agents, retrieves evidence through MCP, and synthesizes an "
+        "account-level assessment."
     )
 
     if st.button(
-        "Run Full AI Investigation",
+        "Run Agentic Investigation",
         type="primary",
+        use_container_width=True,
     ):
         with st.spinner(
-            "Running SignalForge agents and Gemini analysis..."
+            "Supervisor is investigating the account and consulting "
+            "specialist agents..."
         ):
             try:
-                result = investigate_customer(customer_id)
-                st.session_state["investigation"] = result
-                st.session_state["investigation_customer"] = (
-                    customer_id
+                agent_result = asyncio.run(
+                    investigate_customer_agentically(
+                        customer_id
+                    )
                 )
-            except Exception as error:
-                st.error(f"Investigation failed: {error}")
 
-    result = st.session_state.get("investigation")
+                finding = agent_result["finding"]
+
+                st.session_state[
+                    "agentic_investigation"
+                ] = finding.model_dump()
+
+                st.session_state[
+                    "agentic_trace"
+                ] = agent_result["trace"]
+
+                usage_result = agent_result["usage"]
+
+                st.session_state[
+                    "agentic_usage"
+                ] = {
+                    "requests": usage_result.requests,
+                    "input_tokens": usage_result.input_tokens,
+                    "output_tokens": usage_result.output_tokens,
+                    "total_tokens": usage_result.total_tokens,
+                }
+
+                st.session_state[
+                    "agentic_customer"
+                ] = customer_id
+
+            except Exception as error:
+                st.error(
+                    "Agentic investigation failed. "
+                    f"{type(error).__name__}: {error}"
+                )
+
+    investigation = st.session_state.get(
+        "agentic_investigation"
+    )
 
     if (
-        result
-        and st.session_state.get(
-            "investigation_customer"
-        ) == customer_id
+        investigation
+        and st.session_state.get("agentic_customer")
+        == customer_id
     ):
-        voice = result["voice_of_customer"]
+        st.markdown("---")
 
-        v1, v2, v3 = st.columns(3)
-        v1.metric(
-            "Sentiment",
-            voice["sentiment"].title(),
-        )
-        v2.metric(
-            "AI Risk",
-            voice["risk_level"].title(),
-        )
-        v3.metric(
-            "Confidence",
-            f"{voice['confidence']:.0%}",
-        )
+        a1, a2, a3 = st.columns(3)
+
+        with a1:
+            st.metric(
+                "Overall Risk",
+                investigation["overall_risk"],
+            )
+
+        with a2:
+            st.metric(
+                "Risk Score",
+                f'{investigation["overall_risk_score"]:.0f} / 100',
+            )
+
+        with a3:
+            st.metric(
+                "Confidence",
+                f'{investigation["confidence"]:.0%}',
+            )
+
+        st.markdown("#### Executive Summary")
 
         st.markdown(
             f"""
             <div class="ai-summary-card">
-                <div class="finding-title">
-                    Voice of Customer Summary
-                </div>
                 <div class="finding-summary">
-                    {html.escape(voice["summary"])}
+                    {html.escape(
+                        investigation["executive_summary"]
+                    )}
                 </div>
             </div>
             """,
             unsafe_allow_html=True,
         )
 
-        signals = {
-            "Competitor mentioned":
-                voice["competitor_mentioned"],
-            "Pricing objection":
-                voice["pricing_objection"],
-            "Product gap detected":
-                voice["product_gap_detected"],
-            "Churn language detected":
-                voice["churn_language_detected"],
-        }
+        st.markdown("#### Risk Drivers")
 
-        st.markdown("#### Signals detected")
+        for driver in investigation["risk_drivers"]:
+            with st.expander(
+                f'{driver["severity"]} · {driver["domain"]}',
+                expanded=True,
+            ):
+                st.write(driver["explanation"])
 
-        signal_columns = st.columns(4)
+                if driver["evidence"]:
+                    st.markdown("**Evidence**")
 
-        for column, (label, detected) in zip(
-            signal_columns,
-            signals.items(),
-        ):
-            with column:
-                if detected:
-                    st.warning(f"⚠ {label}")
-                else:
-                    st.success(f"✓ {label}")
+                    for evidence in driver["evidence"]:
+                        st.markdown(
+                            f"- {html.escape(str(evidence))}"
+                        )
 
-        st.markdown("#### Evidence")
+        signal_left, signal_right = st.columns(2)
 
-        for evidence in voice["evidence"]:
-            with st.expander(evidence["source_id"]):
-                st.write(evidence["evidence_text"])
-                st.caption(evidence["explanation"])
+        with signal_left:
+            st.markdown("#### ✅ Positive Signals")
 
-        st.markdown("### Recommended next actions")
+            if investigation["positive_signals"]:
+                for signal in investigation[
+                    "positive_signals"
+                ]:
+                    st.success(signal)
+            else:
+                st.caption(
+                    "No material positive signals identified."
+                )
 
-        for index, action in enumerate(
-            result["recommended_actions"],
-            start=1,
-        ):
+        with signal_right:
+            st.markdown("#### ⚖ Contradictory Signals")
+
+            if investigation["contradictory_signals"]:
+                for signal in investigation[
+                    "contradictory_signals"
+                ]:
+                    st.info(signal)
+            else:
+                st.caption(
+                    "No meaningful contradictory signals."
+                )
+
+        if investigation["missing_information"]:
+            st.markdown("#### Missing Information")
+
+            for item in investigation[
+                "missing_information"
+            ]:
+                st.warning(item)
+
+        st.markdown("### Recommended Next Actions")
+
+        actions = sorted(
+            investigation["recommended_actions"],
+            key=lambda item: item["priority"],
+        )
+
+        for action in actions:
             st.markdown(
                 f"""
                 <div class="action-card">
-                    <div class="action-number">{index}</div>
-                    <div>{html.escape(action)}</div>
+                    <div class="action-number">
+                        {action["priority"]}
+                    </div>
+                    <div>
+                        <strong>
+                            {html.escape(action["action"])}
+                        </strong>
+                        <br>
+                        <small>
+                            Owner:
+                            {html.escape(action["owner"])}
+                        </small>
+                        <br>
+                        {html.escape(action["rationale"])}
+                    </div>
                 </div>
                 """,
                 unsafe_allow_html=True,
             )
 
-    st.markdown("### Recent meeting notes")
+        st.markdown("#### Agents Consulted")
+
+        specialist_cols = st.columns(
+            min(
+                5,
+                max(
+                    1,
+                    len(
+                        investigation[
+                            "specialists_consulted"
+                        ]
+                    ),
+                ),
+            )
+        )
+
+        for column, specialist in zip(
+            specialist_cols,
+            investigation["specialists_consulted"],
+        ):
+            with column:
+                st.success(f"✓ {specialist}")
+
+        usage_data = st.session_state.get(
+            "agentic_usage",
+            {},
+        )
+
+        trace_data = st.session_state.get(
+            "agentic_trace",
+            [],
+        )
+
+        with st.expander(
+            "Technical details · Agent trace & usage"
+        ):
+            if usage_data:
+                u1, u2, u3, u4 = st.columns(4)
+
+                u1.metric(
+                    "LLM Requests",
+                    usage_data.get("requests", 0),
+                )
+                u2.metric(
+                    "Input Tokens",
+                    f'{usage_data.get("input_tokens", 0):,}',
+                )
+                u3.metric(
+                    "Output Tokens",
+                    f'{usage_data.get("output_tokens", 0):,}',
+                )
+                u4.metric(
+                    "Total Tokens",
+                    f'{usage_data.get("total_tokens", 0):,}',
+                )
+
+            st.markdown("**Supervisor Tool Trace**")
+
+            for event in trace_data:
+                event_type = event.get("type", "")
+
+                if event_type == "tool_call_item":
+                    st.code(
+                        f'{event.get("tool_name")}\n'
+                        f'{event.get("arguments", "")}',
+                        language="text",
+                    )
+
+        st.markdown("### Recent meeting notes")
 
     for note in get_recent_meeting_notes(
         customer_id,

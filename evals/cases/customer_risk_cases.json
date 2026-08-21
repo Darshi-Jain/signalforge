@@ -1,0 +1,140 @@
+[
+  {
+    "case_id": "healthy_customer",
+    "customer_id": "CUST-0091",
+    "expected_overall_risk": ["Low", "Medium"],
+    "required_specialists": [],
+    "acceptable_specialists": [
+      "Product Adoption",
+      "Support",
+      "Relationship",
+      "Commercial",
+      "Voice of Customer"
+    ],
+    "required_evidence_terms": [],
+    "forbidden_claims": [
+      "customer explicitly intends to churn",
+      "competitor mentioned",
+      "pricing objection"
+    ]
+  },
+  {
+    "case_id": "usage_decline",
+    "customer_id": "CUST-0078",
+    "expected_overall_risk": ["Medium", "High"],
+    "required_specialists": [
+      "Product Adoption"
+    ],
+    "acceptable_specialists": [
+      "Support",
+      "Relationship",
+      "Commercial",
+      "Voice of Customer"
+    ],
+    "required_evidence_terms": [
+      "active users"
+    ],
+    "forbidden_claims": [
+      "customer explicitly intends to churn"
+    ]
+  },
+  {
+    "case_id": "support_escalation",
+    "customer_id": "CUST-0085",
+    "expected_overall_risk": ["Medium", "High"],
+    "required_specialists": [
+      "Support"
+    ],
+    "acceptable_specialists": [
+      "Product Adoption",
+      "Relationship",
+      "Commercial",
+      "Voice of Customer"
+    ],
+    "required_evidence_terms": [
+      "support"
+    ],
+    "forbidden_claims": [
+      "competitor mentioned",
+      "pricing objection"
+    ]
+  },
+  {
+    "case_id": "champion_departure",
+    "customer_id": "CUST-0068",
+    "expected_overall_risk": ["Medium", "High"],
+    "required_specialists": [
+      "Relationship"
+    ],
+    "acceptable_specialists": [
+      "Product Adoption",
+      "Support",
+      "Commercial",
+      "Voice of Customer"
+    ],
+    "required_evidence_terms": [
+      "champion"
+    ],
+    "forbidden_claims": [
+      "customer explicitly intends to churn"
+    ]
+  },
+  {
+    "case_id": "commercial_risk",
+    "customer_id": "CUST-0019",
+    "expected_overall_risk": ["Medium", "High"],
+    "required_specialists": [
+      "Commercial"
+    ],
+    "acceptable_specialists": [
+      "Product Adoption",
+      "Support",
+      "Relationship",
+      "Voice of Customer"
+    ],
+    "required_evidence_terms": [
+      "renewal"
+    ],
+    "forbidden_claims": [
+      "competitor mentioned"
+    ]
+  },
+  {
+    "case_id": "competitor_risk",
+    "customer_id": "CUST-0066",
+    "expected_overall_risk": ["Medium", "High"],
+    "required_specialists": [
+      "Voice of Customer"
+    ],
+    "acceptable_specialists": [
+      "Product Adoption",
+      "Support",
+      "Relationship",
+      "Commercial"
+    ],
+    "required_evidence_terms": [
+      "competitor"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "case_id": "seasonal_decline",
+    "customer_id": "CUST-0084",
+    "expected_overall_risk": ["Low", "Medium"],
+    "required_specialists": [
+      "Product Adoption"
+    ],
+    "acceptable_specialists": [
+      "Support",
+      "Relationship",
+      "Commercial",
+      "Voice of Customer"
+    ],
+    "required_evidence_terms": [
+      "usage"
+    ],
+    "forbidden_claims": [
+      "customer explicitly intends to churn"
+    ]
+  }
+]

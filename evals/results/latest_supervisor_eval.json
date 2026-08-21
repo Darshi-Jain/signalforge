@@ -1,0 +1,312 @@
+[
+  {
+    "case_id": "healthy_customer",
+    "customer_id": "CUST-0091",
+    "pass": true,
+    "risk": {
+      "pass": true,
+      "expected": [
+        "Low",
+        "Medium"
+      ],
+      "actual": "Low",
+      "score": 10.0
+    },
+    "specialists": {
+      "pass": true,
+      "required": [],
+      "called": [
+        "Voice of Customer"
+      ],
+      "unexpected": [],
+      "count": 1
+    },
+    "evidence": {
+      "pass": true,
+      "checks": {}
+    },
+    "forbidden_claims": {
+      "pass": true,
+      "checks": {
+        "customer explicitly intends to churn": true,
+        "competitor mentioned": true,
+        "pricing objection": true
+      }
+    },
+    "usage": {
+      "requests": 3,
+      "input_tokens": 3821,
+      "output_tokens": 1666,
+      "total_tokens": 5487
+    }
+  },
+  {
+    "case_id": "usage_decline",
+    "customer_id": "CUST-0078",
+    "pass": true,
+    "risk": {
+      "pass": true,
+      "expected": [
+        "Medium",
+        "High"
+      ],
+      "actual": "High",
+      "score": 80.0
+    },
+    "specialists": {
+      "pass": true,
+      "required": [
+        "Product Adoption"
+      ],
+      "called": [
+        "Product Adoption",
+        "Relationship",
+        "Voice of Customer"
+      ],
+      "unexpected": [],
+      "count": 3
+    },
+    "evidence": {
+      "pass": true,
+      "checks": {
+        "active users": true
+      }
+    },
+    "forbidden_claims": {
+      "pass": true,
+      "checks": {
+        "customer explicitly intends to churn": true
+      }
+    },
+    "usage": {
+      "requests": 6,
+      "input_tokens": 11991,
+      "output_tokens": 3499,
+      "total_tokens": 15490
+    }
+  },
+  {
+    "case_id": "support_escalation",
+    "customer_id": "CUST-0085",
+    "pass": true,
+    "risk": {
+      "pass": true,
+      "expected": [
+        "Medium",
+        "High"
+      ],
+      "actual": "High",
+      "score": 82.5
+    },
+    "specialists": {
+      "pass": true,
+      "required": [
+        "Support"
+      ],
+      "called": [
+        "Support",
+        "Voice of Customer"
+      ],
+      "unexpected": [],
+      "count": 2
+    },
+    "evidence": {
+      "pass": true,
+      "checks": {
+        "support": true
+      }
+    },
+    "forbidden_claims": {
+      "pass": true,
+      "checks": {
+        "competitor mentioned": true,
+        "pricing objection": true
+      }
+    },
+    "usage": {
+      "requests": 4,
+      "input_tokens": 5094,
+      "output_tokens": 3008,
+      "total_tokens": 8102
+    }
+  },
+  {
+    "case_id": "champion_departure",
+    "customer_id": "CUST-0068",
+    "pass": true,
+    "risk": {
+      "pass": true,
+      "expected": [
+        "Medium",
+        "High"
+      ],
+      "actual": "High",
+      "score": 78.0
+    },
+    "specialists": {
+      "pass": true,
+      "required": [
+        "Relationship"
+      ],
+      "called": [
+        "Product Adoption",
+        "Relationship",
+        "Support",
+        "Voice of Customer"
+      ],
+      "unexpected": [],
+      "count": 4
+    },
+    "evidence": {
+      "pass": true,
+      "checks": {
+        "champion": true
+      }
+    },
+    "forbidden_claims": {
+      "pass": true,
+      "checks": {
+        "customer explicitly intends to churn": true
+      }
+    },
+    "usage": {
+      "requests": 6,
+      "input_tokens": 13561,
+      "output_tokens": 5942,
+      "total_tokens": 19503
+    }
+  },
+  {
+    "case_id": "commercial_risk",
+    "customer_id": "CUST-0019",
+    "pass": true,
+    "risk": {
+      "pass": true,
+      "expected": [
+        "Medium",
+        "High"
+      ],
+      "actual": "High",
+      "score": 88.0
+    },
+    "specialists": {
+      "pass": true,
+      "required": [
+        "Commercial"
+      ],
+      "called": [
+        "Commercial",
+        "Relationship",
+        "Voice of Customer"
+      ],
+      "unexpected": [],
+      "count": 3
+    },
+    "evidence": {
+      "pass": true,
+      "checks": {
+        "renewal": true
+      }
+    },
+    "forbidden_claims": {
+      "pass": true,
+      "checks": {
+        "competitor mentioned": true
+      }
+    },
+    "usage": {
+      "requests": 7,
+      "input_tokens": 12487,
+      "output_tokens": 3115,
+      "total_tokens": 15602
+    }
+  },
+  {
+    "case_id": "competitor_risk",
+    "customer_id": "CUST-0066",
+    "pass": true,
+    "risk": {
+      "pass": true,
+      "expected": [
+        "Medium",
+        "High"
+      ],
+      "actual": "High",
+      "score": 80.0
+    },
+    "specialists": {
+      "pass": true,
+      "required": [
+        "Voice of Customer"
+      ],
+      "called": [
+        "Commercial",
+        "Relationship",
+        "Voice of Customer"
+      ],
+      "unexpected": [],
+      "count": 3
+    },
+    "evidence": {
+      "pass": true,
+      "checks": {
+        "competitor": true
+      }
+    },
+    "forbidden_claims": {
+      "pass": true,
+      "checks": {}
+    },
+    "usage": {
+      "requests": 6,
+      "input_tokens": 11915,
+      "output_tokens": 5454,
+      "total_tokens": 17369
+    }
+  },
+  {
+    "case_id": "seasonal_decline",
+    "customer_id": "CUST-0084",
+    "pass": true,
+    "risk": {
+      "pass": true,
+      "expected": [
+        "Low",
+        "Medium"
+      ],
+      "actual": "Low",
+      "score": 25.0
+    },
+    "specialists": {
+      "pass": true,
+      "required": [
+        "Product Adoption"
+      ],
+      "called": [
+        "Product Adoption",
+        "Relationship",
+        "Voice of Customer"
+      ],
+      "unexpected": [],
+      "count": 3
+    },
+    "evidence": {
+      "pass": true,
+      "checks": {
+        "usage": true
+      }
+    },
+    "forbidden_claims": {
+      "pass": true,
+      "checks": {
+        "customer explicitly intends to churn": true
+      }
+    },
+    "usage": {
+      "requests": 6,
+      "input_tokens": 9754,
+      "output_tokens": 2393,
+      "total_tokens": 12147
+    }
+  }
+]

@@ -184,3 +184,72 @@ def compare_usage_with_segment(customer_id: str) -> dict:
             4,
         ),
     }
+
+
+@function_tool
+def risk_triage(customer_id: str) -> dict:
+    """
+    Retrieve lightweight cross-domain signals used only to decide which
+    specialist agents should investigate a customer.
+
+    This is routing context, not a final risk assessment.
+    """
+    usage = get_usage_trend(customer_id)
+    support = get_support_summary(customer_id)
+    commercial = get_contract_risk(customer_id)
+
+    relationship_repo = RelationshipRepository()
+    relationship_summary = relationship_repo.get_summary(customer_id)
+    no_response_count = relationship_repo.get_no_response_count(customer_id)
+
+    notes = MeetingRepository().get_customer_notes(customer_id)
+
+    return {
+        "customer_id": customer_id,
+        "usage": {
+            "active_user_change_pct": usage.active_user_change_pct,
+            "seat_utilization": usage.latest_seat_utilization,
+            "feature_adoption": usage.latest_feature_adoption,
+            "trend_direction": usage.trend_direction,
+        },
+        "support": {
+            "critical_tickets": support.critical_tickets,
+            "unresolved_tickets": support.unresolved_tickets,
+            "reopened_tickets": support.reopened_tickets,
+        },
+        "relationship": {
+            "active_champions": relationship_summary.get(
+                "active_champions", 0
+            ),
+            "active_executive_sponsors": relationship_summary.get(
+                "active_executive_sponsors", 0
+            ),
+            "no_response_count": no_response_count,
+        },
+        "commercial": {
+            "renewal_days": commercial.renewal_days,
+            "payment_status": commercial.payment_status,
+            "pricing_objection": commercial.pricing_objection,
+            "requested_seat_reduction_pct":
+                commercial.requested_seat_reduction_pct,
+        },
+        "voc": {
+            "recent_notes_available": min(len(notes), 5),
+        },
+    }
+
+
+@function_tool
+def load_investigation_skill(skill_name: str) -> str:
+    """
+    Load a reusable SignalForge investigation playbook.
+
+    Available skills:
+    - churn_investigation
+    - renewal_recovery
+    - support_escalation
+    - adoption_diagnosis
+    """
+    from src.services.skills import load_skill
+
+    return load_skill(skill_name)
