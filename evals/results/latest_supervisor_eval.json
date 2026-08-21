@@ -15,11 +15,9 @@
     "specialists": {
       "pass": true,
       "required": [],
-      "called": [
-        "Voice of Customer"
-      ],
+      "called": [],
       "unexpected": [],
-      "count": 1
+      "count": 0
     },
     "evidence": {
       "pass": true,
@@ -35,9 +33,9 @@
     },
     "usage": {
       "requests": 3,
-      "input_tokens": 3821,
-      "output_tokens": 1666,
-      "total_tokens": 5487
+      "input_tokens": 2951,
+      "output_tokens": 1392,
+      "total_tokens": 4343
     }
   },
   {
@@ -51,7 +49,7 @@
         "High"
       ],
       "actual": "High",
-      "score": 80.0
+      "score": 85.0
     },
     "specialists": {
       "pass": true,
@@ -61,10 +59,11 @@
       "called": [
         "Product Adoption",
         "Relationship",
+        "Support",
         "Voice of Customer"
       ],
       "unexpected": [],
-      "count": 3
+      "count": 4
     },
     "evidence": {
       "pass": true,
@@ -79,10 +78,10 @@
       }
     },
     "usage": {
-      "requests": 6,
-      "input_tokens": 11991,
-      "output_tokens": 3499,
-      "total_tokens": 15490
+      "requests": 7,
+      "input_tokens": 13170,
+      "output_tokens": 3307,
+      "total_tokens": 16477
     }
   },
   {
@@ -96,7 +95,7 @@
         "High"
       ],
       "actual": "High",
-      "score": 82.5
+      "score": 72.0
     },
     "specialists": {
       "pass": true,
@@ -104,11 +103,14 @@
         "Support"
       ],
       "called": [
+        "Commercial",
+        "Product Adoption",
+        "Relationship",
         "Support",
         "Voice of Customer"
       ],
       "unexpected": [],
-      "count": 2
+      "count": 5
     },
     "evidence": {
       "pass": true,
@@ -124,10 +126,10 @@
       }
     },
     "usage": {
-      "requests": 4,
-      "input_tokens": 5094,
-      "output_tokens": 3008,
-      "total_tokens": 8102
+      "requests": 7,
+      "input_tokens": 21604,
+      "output_tokens": 5725,
+      "total_tokens": 27329
     }
   },
   {
@@ -141,7 +143,7 @@
         "High"
       ],
       "actual": "High",
-      "score": 78.0
+      "score": 85.0
     },
     "specialists": {
       "pass": true,
@@ -149,13 +151,12 @@
         "Relationship"
       ],
       "called": [
-        "Product Adoption",
         "Relationship",
         "Support",
         "Voice of Customer"
       ],
       "unexpected": [],
-      "count": 4
+      "count": 3
     },
     "evidence": {
       "pass": true,
@@ -171,9 +172,9 @@
     },
     "usage": {
       "requests": 6,
-      "input_tokens": 13561,
-      "output_tokens": 5942,
-      "total_tokens": 19503
+      "input_tokens": 12351,
+      "output_tokens": 3937,
+      "total_tokens": 16288
     }
   },
   {
@@ -187,7 +188,7 @@
         "High"
       ],
       "actual": "High",
-      "score": 88.0
+      "score": 85.0
     },
     "specialists": {
       "pass": true,
@@ -215,10 +216,10 @@
       }
     },
     "usage": {
-      "requests": 7,
-      "input_tokens": 12487,
-      "output_tokens": 3115,
-      "total_tokens": 15602
+      "requests": 6,
+      "input_tokens": 12657,
+      "output_tokens": 3564,
+      "total_tokens": 16221
     }
   },
   {
@@ -232,7 +233,7 @@
         "High"
       ],
       "actual": "High",
-      "score": 80.0
+      "score": 90.0
     },
     "specialists": {
       "pass": true,
@@ -242,10 +243,11 @@
       "called": [
         "Commercial",
         "Relationship",
+        "Support",
         "Voice of Customer"
       ],
       "unexpected": [],
-      "count": 3
+      "count": 4
     },
     "evidence": {
       "pass": true,
@@ -258,10 +260,10 @@
       "checks": {}
     },
     "usage": {
-      "requests": 6,
-      "input_tokens": 11915,
-      "output_tokens": 5454,
-      "total_tokens": 17369
+      "requests": 9,
+      "input_tokens": 22923,
+      "output_tokens": 3823,
+      "total_tokens": 26746
     }
   },
   {
@@ -284,11 +286,10 @@
       ],
       "called": [
         "Product Adoption",
-        "Relationship",
         "Voice of Customer"
       ],
       "unexpected": [],
-      "count": 3
+      "count": 2
     },
     "evidence": {
       "pass": true,
@@ -303,10 +304,10 @@
       }
     },
     "usage": {
-      "requests": 6,
-      "input_tokens": 9754,
-      "output_tokens": 2393,
-      "total_tokens": 12147
+      "requests": 4,
+      "input_tokens": 5422,
+      "output_tokens": 2637,
+      "total_tokens": 8059
     }
   }
 ]
